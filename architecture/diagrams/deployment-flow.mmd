@@ -1,0 +1,35 @@
+flowchart TD
+
+    A[Developer Push]
+        --> B[Git Repository]
+
+    B
+        --> C[CI Pipeline]
+
+    C
+        --> D[Linting]
+
+    D
+        --> E[Testing]
+
+    E
+        --> F[Docker Build]
+
+    F
+        --> G[Container Registry]
+
+    G
+        --> H[Deployment]
+
+    H
+        --> I[Staging Environment]
+
+    I
+        --> J[Production Environment]
+
+    J
+        --> K[Monitoring]
+
+    K
+        --> L[Alerts]
+```
