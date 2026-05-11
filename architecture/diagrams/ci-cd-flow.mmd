@@ -1,0 +1,38 @@
+flowchart TD
+
+    A[Developer Commit]
+        --> B[GitHub Repository]
+
+    B
+        --> C[GitHub Actions]
+
+    C
+        --> D[Install Dependencies]
+
+    D
+        --> E[Run Tests]
+
+    E
+        --> F[Security Scan]
+
+    F
+        --> G[Docker Build]
+
+    G
+        --> H[Push Image]
+
+    H
+        --> I[Deploy to Staging]
+
+    I
+        --> J[Validation]
+
+    J
+        --> K[Deploy to Production]
+
+    K
+        --> L[Monitoring]
+
+    L
+        --> M[Alerts]
+```
