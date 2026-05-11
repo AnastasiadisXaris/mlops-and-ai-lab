@@ -1,0 +1,49 @@
+```mermaid
+flowchart TD
+
+    A[User Question]
+        --> B[API Gateway]
+
+    B
+        --> C[RAG Orchestrator]
+
+    C
+        --> D[Retriever]
+
+    D
+        --> E[Vector Database]
+
+    E
+        --> D
+
+    D
+        --> F[Relevant Chunks]
+
+    F
+        --> G[Prompt Builder]
+
+    G
+        --> H[LLM]
+
+    H
+        --> I[Generated Answer]
+
+    I
+        --> J[Frontend]
+
+    subgraph Document Ingestion
+
+        K[Documents]
+            --> L[Text Extraction]
+
+        L
+            --> M[Chunking]
+
+        M
+            --> N[Embedding Generation]
+
+        N
+            --> E
+
+    end
+```
