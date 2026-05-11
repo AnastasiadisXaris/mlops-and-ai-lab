@@ -1,0 +1,41 @@
+flowchart TD
+
+    A[Data Sources]
+        --> B[Data Ingestion]
+
+    B
+        --> C[Data Validation]
+
+    C
+        --> D[Feature Engineering]
+
+    D
+        --> E[Feature Store]
+
+    E
+        --> F[Model Training]
+
+    F
+        --> G[Experiment Tracking]
+
+    G
+        --> H[Model Evaluation]
+
+    H
+        --> I[Model Registry]
+
+    I
+        --> J[Deployment]
+
+    J
+        --> K[Monitoring]
+
+    K
+        --> L[Drift Detection]
+
+    L
+        --> M[Retraining Trigger]
+
+    M
+        --> F
+```
