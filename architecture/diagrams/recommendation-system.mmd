@@ -1,0 +1,48 @@
+flowchart TD
+
+    A[User Events]
+        --> B[Data Collection]
+
+    B
+        --> C[Data Storage]
+
+    C
+        --> D[Feature Engineering]
+
+    D
+        --> E[Candidate Generation]
+
+    E
+        --> F[Ranking Model]
+
+    F
+        --> G[Filtering Layer]
+
+    G
+        --> H[Recommendation API]
+
+    H
+        --> I[Frontend Application]
+
+    I
+        --> J[User Feedback]
+
+    J
+        --> A
+
+    subgraph ML Pipeline
+
+        K[Training Data]
+            --> L[Model Training]
+
+        L
+            --> M[Evaluation]
+
+        M
+            --> N[Model Registry]
+
+        N
+            --> F
+
+    end
+```
