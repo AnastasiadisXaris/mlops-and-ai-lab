@@ -1,0 +1,46 @@
+flowchart TD
+
+    A[Internet]
+        --> B[Ingress Controller]
+
+    B
+        --> C[Frontend Service]
+
+    B
+        --> D[Backend API Service]
+
+    D
+        --> E[ML Service]
+
+    D
+        --> F[PostgreSQL]
+
+    D
+        --> G[Redis]
+
+    E
+        --> H[Vector Database]
+
+    subgraph Kubernetes Cluster
+
+        C
+        D
+        E
+        F
+        G
+        H
+
+    end
+
+    subgraph Monitoring Stack
+
+        I[Prometheus]
+        J[Grafana]
+        K[Loki]
+
+    end
+
+    C --> I
+    D --> I
+    E --> I
+```
