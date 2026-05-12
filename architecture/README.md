@@ -1,56 +1,33 @@
-# 🏗 ML System Design Architecture
+# ML System Design Architecture
 
 > Personal architecture notes for scalable Machine Learning, MLOps, AI Engineering, and SaaS systems.
 
 ---
 
-# 📌 Objectives
+## Purpose
 
-This document defines:
-- ML system architecture patterns
-- production deployment pipelines
-- model lifecycle management
-- monitoring strategies
-- scalable AI infrastructure
-- SaaS-ready ML architectures
+This document defines ML system architecture patterns, production deployment pipelines, model lifecycle management, monitoring strategies, and scalable AI infrastructure.
 
 ---
 
-# 🧠 Core ML Lifecycle
+## Core ML Lifecycle
 
 ```text
-Data Collection
+Data Collection → Data Validation → Preprocessing → Feature Engineering
     ↓
-Data Validation
+Model Training → Evaluation → Experiment Tracking → Model Registry
     ↓
-Data Preprocessing
-    ↓
-Feature Engineering
-    ↓
-Model Training
-    ↓
-Evaluation
-    ↓
-Experiment Tracking
-    ↓
-Model Registry
-    ↓
-Deployment
-    ↓
-Monitoring
-    ↓
-Retraining
+Deployment → Monitoring → Retraining
 ```
 
 ---
 
-# 🧱 High-Level Architecture
+## High-Level Architecture
 
 ```text
                     ┌────────────────────┐
                     │   Client / Frontend │
                     └─────────┬──────────┘
-                              │
                               ▼
                     ┌────────────────────┐
                     │ API Gateway / Nginx │
@@ -58,7 +35,6 @@ Retraining
                               │
                 ┌─────────────┴─────────────┐
                 ▼                           ▼
-
       ┌──────────────────┐        ┌──────────────────┐
       │ Authentication    │        │ Backend Services │
       │ JWT / OAuth2      │        │ Django / FastAPI │
@@ -66,39 +42,34 @@ Retraining
                                            │
                      ┌─────────────────────┼─────────────────────┐
                      ▼                     ▼                     ▼
-
          ┌────────────────┐   ┌──────────────────┐   ┌─────────────────┐
          │ ML Inference   │   │ Recommendation   │   │ Analytics Engine │
          │ Service        │   │ Engine           │   │ BI / Metrics     │
-         └────────────────┘   └──────────────────┘   └─────────────────┘
-                     │
-                     ▼
+         └───────┬────────┘   └──────────────────┘   └─────────────────┘
+                 ▼
          ┌──────────────────────┐
          │ Model Registry        │
          │ MLflow / BentoML      │
          └──────────────────────┘
-                     │
-                     ▼
+                 ▼
          ┌──────────────────────┐
          │ Feature Store         │
          │ Redis / Feast         │
          └──────────────────────┘
-                     │
-                     ▼
+                 ▼
          ┌──────────────────────┐
-         │ PostgreSQL / MongoDB │
+         │ PostgreSQL / MongoDB  │
          └──────────────────────┘
 ```
 
 ---
 
-# ⚙️ Core Technology Stack
+## Core Technology Stack
 
-| Layer | Recommended Stack |
+| Layer | Technology |
 |---|---|
 | Frontend | React / Next.js |
 | Backend | Django / FastAPI |
-| API | REST / GraphQL |
 | ML Framework | PyTorch / Scikit-learn |
 | Experiment Tracking | MLflow |
 | Serving | FastAPI / BentoML |
@@ -114,194 +85,76 @@ Retraining
 
 ---
 
-# 🚀 Recommended Production ML Architecture
+## Production Pipelines
 
-## 1. Training Pipeline
+### Training Pipeline
 
 ```text
-Raw Data
-    ↓
-ETL Pipeline
-    ↓
-Feature Engineering
-    ↓
-Training Script
-    ↓
-Validation
-    ↓
-Experiment Tracking
-    ↓
-Model Registry
+Raw Data → ETL Pipeline → Feature Engineering → Training → Validation → Experiment Tracking → Model Registry
 ```
 
-### Tools
-- Pandas
-- Polars
-- PyTorch
-- Scikit-learn
-- MLflow
-- DVC
+**Tools:** Pandas · Polars · PyTorch · Scikit-learn · MLflow · DVC
 
----
-
-# 📦 Deployment Pipeline
+### Deployment Pipeline
 
 ```text
-Git Push
-    ↓
-GitHub Actions
-    ↓
-Docker Build
-    ↓
-Unit Tests
-    ↓
-Container Registry
-    ↓
-Kubernetes Deployment
-    ↓
-Inference API
+Git Push → GitHub Actions → Docker Build → Unit Tests → Container Registry → Kubernetes Deployment → Inference API
 ```
 
 ---
 
-# 🧪 Experiment Tracking
+## Key Components
 
-## Goals
-- reproducibility
-- comparison of runs
-- hyperparameter logging
-- artifact storage
+### Experiment Tracking
 
-## Recommended
-- MLflow
-- Weights & Biases
+**Goals:** reproducibility · run comparison · hyperparameter logging · artifact storage
 
-## Track:
-- hyperparameters
-- metrics
-- datasets
-- model artifacts
-- training duration
-- GPU usage
+**Track:** hyperparameters · metrics · datasets · model artifacts · training duration · GPU usage
+
+**Tools:** MLflow · Weights & Biases
+
+### Model Registry
+
+Central storage for trained models, versioning, metadata, and deployment stages.
+
+**Stages:** `Experimental → Staging → Production → Archived`
+
+**Tools:** MLflow Registry · BentoML
+
+### API Serving
+
+```text
+Client Request → FastAPI Endpoint → Model Loading → Prediction → JSON Response
+```
+
+**Best practices:** async endpoints · request validation · response schemas · batching · caching
 
 ---
 
-# 📚 Model Registry
+## Domain Architectures
 
-## Purpose
-Central storage for:
-- trained models
-- versioning
-- metadata
-- deployment stages
-
-## Example Stages
-```text
-Staging
-Production
-Archived
-Experimental
-```
-
-## Recommended
-- MLflow Registry
-- BentoML
-
----
-
-# 🌐 API Serving Architecture
-
-## FastAPI Example
+### Recommendation System
 
 ```text
-Client Request
-    ↓
-FastAPI Endpoint
-    ↓
-Model Loading
-    ↓
-Prediction
-    ↓
-JSON Response
+User Data → Behavior Tracking → Feature Extraction → Preference Modeling → Recommendation Engine → Results
 ```
 
-## Best Practices
-- async endpoints
-- request validation
-- response schemas
-- batching
-- caching
+**Techniques:** collaborative filtering · content-based filtering · hybrid systems · deep learning recommenders
 
----
-
-# 🧠 Recommendation System Architecture
+### Consumer Preference Modeling
 
 ```text
-User Data
-    ↓
-Behavior Tracking
-    ↓
-Feature Extraction
-    ↓
-Preference Modeling
-    ↓
-Recommendation Engine
-    ↓
-Personalized Results
+Survey Data → Conjoint Analysis → Feature Importance → Utility Estimation → ML Modeling → Preference Prediction
 ```
 
-## Techniques
-- collaborative filtering
-- content-based filtering
-- hybrid systems
-- deep learning recommenders
+**Models:** XGBoost · Random Forest · Neural Networks · Transformer Models · Embedding Models
 
----
-
-# 📊 Consumer Preference Modeling Pipeline
+### LLM / RAG Architecture
 
 ```text
-Survey Data
-    ↓
-Conjoint Analysis
-    ↓
-Feature Importance
-    ↓
-Utility Estimation
-    ↓
-ML Modeling
-    ↓
-Preference Prediction
+Documents → Chunking → Embedding Generation → Vector Database → Retriever → LLM → Response
 ```
 
-## Potential ML Models
-- XGBoost
-- Random Forest
-- Neural Networks
-- Transformer Models
-- Embedding Models
-
----
-
-# 🤖 LLM / RAG Architecture
-
-```text
-Documents
-    ↓
-Chunking
-    ↓
-Embedding Generation
-    ↓
-Vector Database
-    ↓
-Retriever
-    ↓
-LLM
-    ↓
-Generated Response
-```
-
-## Recommended Stack
 | Component | Tools |
 |---|---|
 | Embeddings | Sentence Transformers |
@@ -311,111 +164,48 @@ Generated Response
 
 ---
 
-# 🐳 Docker Architecture
+## Infrastructure
 
-## Recommended Services
+### Docker Services
 
-```text
-frontend
-backend
-ml-service
-postgres
-redis
-nginx
-mlflow
-prometheus
-grafana
-```
+`frontend` · `backend` · `ml-service` · `postgres` · `redis` · `nginx` · `mlflow` · `prometheus` · `grafana`
 
----
-
-# ☸ Kubernetes Architecture
-
-## Core Components
+### Kubernetes
 
 ```text
-Ingress
-    ↓
-Services
-    ↓
-Deployments
-    ↓
-Pods
+Ingress → Services → Deployments → Pods
 ```
 
-## Important Concepts
-- autoscaling
-- rolling updates
-- secrets management
-- configmaps
-- persistent volumes
+**Key concepts:** autoscaling · rolling updates · secrets management · configmaps · persistent volumes
 
----
-
-# 📈 Monitoring Architecture
+### Monitoring
 
 ```text
-Application Metrics
-    ↓
-Prometheus
-    ↓
-Grafana Dashboards
+Application Metrics → Prometheus → Grafana Dashboards
+Predictions → Drift Detection → Alerts → Retraining Trigger
 ```
 
-## ML Monitoring
-
-```text
-Predictions
-    ↓
-Drift Detection
-    ↓
-Alerts
-    ↓
-Retraining Trigger
-```
-
-## Monitor:
-- latency
-- throughput
-- drift
-- accuracy degradation
-- GPU utilization
-- failures
+**Monitor:** latency · throughput · drift · accuracy degradation · GPU utilization · failures
 
 ---
 
-# 🔐 Security Considerations
+## Security
 
-## API Security
-- JWT authentication
-- rate limiting
-- HTTPS
-- input validation
+**API:** JWT authentication · rate limiting · HTTPS · input validation
 
-## Infrastructure Security
-- secrets management
-- container scanning
-- role-based access
-- encrypted storage
+**Infrastructure:** secrets management · container scanning · RBAC · encrypted storage
 
 ---
 
-# 🧩 CI/CD Strategy
+## CI/CD Strategy
 
-## CI
-- linting
-- unit tests
-- integration tests
-- Docker build validation
+**CI:** linting · unit tests · integration tests · Docker build validation
 
-## CD
-- automatic deployment
-- blue/green deployment
-- rollback support
+**CD:** automatic deployment · blue/green deployment · rollback support
 
 ---
 
-# 🧪 Testing Strategy
+## Testing Strategy
 
 | Type | Description |
 |---|---|
@@ -427,7 +217,7 @@ Retraining Trigger
 
 ---
 
-# 📂 Suggested Project Structure
+## Suggested Project Structure
 
 ```text
 project/
@@ -449,77 +239,34 @@ project/
 
 ---
 
-# 🔥 Recommended Learning Priorities
+## Learning Roadmap
 
-## Phase 1
-- Git
-- Python
-- Docker
-- FastAPI
-- PostgreSQL
-
-## Phase 2
-- MLflow
-- Kubernetes
-- CI/CD
-- Monitoring
-
-## Phase 3
-- Distributed systems
-- Feature stores
-- LLM serving
-- scalable inference
-- vector databases
+| Phase | Topics |
+|---|---|
+| Phase 1 | Git · Python · Docker · FastAPI · PostgreSQL |
+| Phase 2 | MLflow · Kubernetes · CI/CD · Monitoring |
+| Phase 3 | Distributed systems · Feature stores · LLM serving · Vector databases |
 
 ---
 
-# 🚀 Future Extensions
+## Future Extensions
 
-## Potential Additions
-- Agentic AI systems
-- Multi-agent orchestration
-- Real-time streaming ML
-- Federated learning
-- Edge AI
-- AutoML pipelines
+Agentic AI systems · Multi-agent orchestration · Real-time streaming ML · Federated learning · Edge AI · AutoML pipelines
 
 ---
 
-# 📚 Recommended Repositories
+## Recommended Resources
 
-## MLOps
-- https://github.com/DataTalksClub/mlops-zoomcamp
-- https://github.com/visenger/awesome-mlops
+**MLOps:** [mlops-zoomcamp](https://github.com/DataTalksClub/mlops-zoomcamp) · [awesome-mlops](https://github.com/visenger/awesome-mlops)
 
-## DevOps
-- https://github.com/donnemartin/system-design-primer
+**System Design:** [system-design-primer](https://github.com/donnemartin/system-design-primer)
 
-## LLM
-- https://github.com/langchain-ai/langchain
+**LLM:** [LangChain](https://github.com/langchain-ai/langchain)
 
-## Recommendation Systems
-- https://github.com/recommenders-team/recommenders
+**Recommendation Systems:** [recommenders](https://github.com/recommenders-team/recommenders)
 
 ---
 
-# 🧠 Design Philosophy
+## Design Principles
 
-Core principles:
-- reproducibility
-- scalability
-- observability
-- modularity
-- automation
-- maintainability
-
----
-
-# ✨ Long-Term Vision
-
-This repository evolves into:
-- personal AI engineering lab
-- research infrastructure
-- SaaS incubation environment
-- production MLOps ecosystem
-- knowledge management system
-- academic and professional portfolio
+Reproducibility · Scalability · Observability · Modularity · Automation · Maintainability
