@@ -16,58 +16,32 @@ The goal is to build a structured DevOps ecosystem focused on:
 
 ---
 
-# What Is DevOps?
+## What Is DevOps?
 
-DevOps combines:
+DevOps combines Development and Operations to create continuous and automated software delivery systems.
+
+### DevOps Lifecycle
 
 ```text
-Development
-+
-Operations
+Plan → Develop → Build → Test → Deploy → Monitor → Improve
 ```
 
-to create continuous and automated software delivery systems.
-
----
-
-# Core DevOps Goals
+### Core Goals
 
 - faster deployments
 - infrastructure automation
-- continuous integration
-- continuous delivery
+- continuous integration and delivery
 - system reliability
 - operational visibility
 - scalable infrastructure
 
 ---
 
-# High-Level DevOps Lifecycle
-
-```text
-Plan
-    ↓
-Develop
-    ↓
-Build
-    ↓
-Test
-    ↓
-Deploy
-    ↓
-Monitor
-    ↓
-Improve
-```
-
----
-
-# Recommended Folder Structure
+## Folder Structure
 
 ```text
 devops/
 │
-├── README.md
 ├── docker/
 ├── kubernetes/
 ├── ci-cd/
@@ -89,10 +63,6 @@ devops/
 ├── ansible/
 └── diagrams/
 ```
-
----
-
-# Folder Descriptions
 
 | Folder | Purpose |
 |---|---|
@@ -119,104 +89,44 @@ devops/
 
 ---
 
-# DevOps Philosophy
+## Core Principles
 
-DevOps is not only tooling.
+### 1. Automation
 
-It is:
+Automate repetitive operational tasks: deployments, testing, infrastructure provisioning, monitoring, backups.
 
-```text
-operational engineering culture
-```
+### 2. Infrastructure as Code (IaC)
 
-focused on reducing friction between:
+Infrastructure should be version-controlled — servers, networks, Kubernetes clusters, databases defined as code.
 
-- software engineering
-- infrastructure
-- deployment
-- maintenance
-- scaling
+### 3. Continuous Delivery
 
----
+Applications should be deployable continuously with automated pipelines and rollback support.
 
-# Core DevOps Principles
+### 4. Observability
 
----
+Systems must be measurable and debuggable through logs, metrics, and traces.
 
-# 1. Automation
+### 5. Reliability
 
-Automate repetitive operational tasks.
-
-Examples:
-
-- deployments
-- testing
-- infrastructure provisioning
-- monitoring
-- backups
+Systems should survive failures, scaling events, network instability, and deployment issues.
 
 ---
 
-# 2. Infrastructure as Code (IaC)
+## DevOps for AI Systems
 
-Infrastructure should be version-controlled.
+AI systems introduce additional operational complexity beyond standard software.
 
----
-
-# Example
-
-```text
-Servers
-Networks
-Kubernetes Clusters
-Databases
-
-→ defined as code
-```
-
----
-
-# 3. Continuous Delivery
-
-Applications should be deployable continuously.
-
----
-
-# 4. Observability
-
-Systems must be measurable and debuggable.
-
----
-
-# 5. Reliability
-
-Systems should survive:
-
-- failures
-- scaling
-- network instability
-- deployment issues
-
----
-
-# DevOps for AI Systems
-
-AI systems introduce additional operational complexity.
-
----
-
-# AI Infrastructure Challenges
+### AI Infrastructure Challenges
 
 - GPU orchestration
-- model deployment
+- model deployment and versioning
 - inference scaling
 - dataset management
 - drift monitoring
 - retraining automation
 
----
-
-# Example AI DevOps Stack
+### Example AI DevOps Stack
 
 ```text
 Frontend
@@ -232,7 +142,7 @@ Monitoring Stack
 
 ---
 
-# Recommended Core Technologies
+## Recommended Stack
 
 | Area | Technology |
 |---|---|
@@ -248,30 +158,17 @@ Monitoring Stack
 
 ---
 
-# Environment Strategy
-
-Most systems use:
+## Environment Strategy
 
 ```text
-development
-staging
-production
+development → staging → production
 ```
 
----
-
-# Why Environment Separation Matters
-
-Benefits:
-
-- safer deployments
-- realistic testing
-- rollback validation
-- isolation of failures
+Environment separation enables safer deployments, realistic testing, rollback validation, and failure isolation.
 
 ---
 
-# Recommended Operational Workflow
+## Operational Workflow
 
 ```text
 Developer Push
@@ -291,162 +188,45 @@ Incident Detection
 
 ---
 
-# Deployment Philosophy
+## Security & DevSecOps
 
-Modern DevOps favors:
+Security must be integrated into pipelines — not added after deployment.
 
-- immutable infrastructure
-- declarative configuration
-- automated recovery
-- reproducible deployments
+**Key areas:** secrets management · dependency scanning · container scanning · IAM · API protection · audit logging
 
 ---
 
-# Cloud-Native Infrastructure
+## GitOps
 
-Cloud-native systems emphasize:
+GitOps manages infrastructure through Git repositories as the source of truth.
 
-- containers
-- orchestration
-- scaling
-- observability
-- service isolation
+```text
+Git Repository → Desired State → Cluster Synchronization
+```
 
----
-
-# Reliability Engineering
-
-DevOps overlaps with SRE principles.
+**Recommended tools:** ArgoCD · FluxCD
 
 ---
 
-# Important SRE Concepts
+## SRE Concepts
 
 | Concept | Meaning |
 |---|---|
-| SLA | service agreement |
-| SLO | service objective |
-| SLI | service indicator |
+| SLA | service level agreement |
+| SLO | service level objective |
+| SLI | service level indicator |
 | Error Budget | acceptable failure threshold |
 
 ---
 
-# Security in DevOps
+## Monitoring & Logging Philosophy
 
-Security must be integrated into pipelines.
+**Monitor:** infrastructure · APIs · deployments · containers · databases · AI systems · business metrics
 
----
-
-# DevSecOps
-
-```text
-Development
-+
-Security
-+
-Operations
-```
+**Logs should be:** centralized · structured · searchable · correlated
 
 ---
 
-# Important Security Areas
+## MLOps / LLMOps Overlap
 
-- secrets management
-- dependency scanning
-- container scanning
-- IAM
-- API protection
-- audit logging
-
----
-
-# GitOps
-
-GitOps manages infrastructure through Git repositories.
-
----
-
-# GitOps Flow
-
-```text
-Git Repository
-    ↓
-Desired State
-    ↓
-Cluster Synchronization
-```
-
----
-
-# Recommended GitOps Tools
-
-| Tool | Purpose |
-|---|---|
-| ArgoCD | GitOps deployments |
-| FluxCD | GitOps automation |
-
----
-
-# Backup Philosophy
-
-Critical systems require:
-
-- database backups
-- infrastructure backups
-- artifact backups
-- disaster recovery plans
-
----
-
-# Monitoring Philosophy
-
-Monitor:
-
-- infrastructure
-- APIs
-- deployments
-- containers
-- databases
-- AI systems
-- business metrics
-
----
-
-# Logging Philosophy
-
-Logs should be:
-
-- centralized
-- structured
-- searchable
-- correlated
-
----
-
-# AI / MLOps Integration
-
-DevOps increasingly overlaps with:
-
-```text
-MLOps
-LLMOps
-AIOps
-```
-
----
-
-# Long-Term Vision
-
-This folder evolves into:
-
-```text
-Operational Engineering Platform
-    ↓
-Cloud-Native Infrastructure Knowledge Base
-    ↓
-Autonomous AI Operations Ecosystem
-```
-
-DevOps is not merely deployment automation.
-
-It is the operational architecture that allows software systems to evolve continuously without collapsing under their own complexity.
+DevOps increasingly converges with MLOps, LLMOps, and AIOps — sharing the same principles of automation, observability, and continuous delivery applied to ML systems.
