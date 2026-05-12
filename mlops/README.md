@@ -1,26 +1,17 @@
-# ⚙️ MLOps
+# MLOps
 
 This section contains notes, tools, templates, and architecture patterns for building production-ready Machine Learning systems.
 
-MLOps combines:
-- Machine Learning
-- Software Engineering
-- DevOps
-- Data Engineering
-- Monitoring
-- Automation
-- Reproducibility
-
-The goal is not only to train models, but to deploy, monitor, improve, and maintain them in real-world environments.
+MLOps combines Machine Learning, Software Engineering, DevOps, Data Engineering, Monitoring, Automation, and Reproducibility. The goal is not only to train models, but to deploy, monitor, improve, and maintain them in real-world environments.
 
 ---
 
 ## Core Topics
 
-- ML lifecycle
+- ML lifecycle management
 - Experiment tracking
-- Model registry
-- Model serving
+- Model registry and versioning
+- Model serving and inference
 - Feature stores
 - Monitoring and drift detection
 - CI/CD for ML
@@ -43,6 +34,14 @@ The goal is not only to train models, but to deploy, monitor, improve, and maint
 | `feature-store.md` | Feature management and reuse |
 | `mlops-tools.md` | Useful MLOps tools and platforms |
 | `mlops-project-ideas.md` | Practical portfolio/research project ideas |
+
+### Templates
+
+| File | Purpose |
+|---|---|
+| `templates/ml-project-template.md` | Reusable ML project structure |
+| `templates/experiment-log-template.md` | Experiment logging template |
+| `templates/model-card-template.md` | Model card documentation |
 
 ---
 
@@ -68,3 +67,19 @@ Model Deployment
 Monitoring
     ↓
 Retraining
+```
+
+---
+
+## Recommended Stack
+
+| Area | Technology |
+|---|---|
+| Experiment Tracking | MLflow |
+| Data Versioning | DVC |
+| Serving | FastAPI / BentoML |
+| Drift Detection | Evidently AI |
+| Monitoring | Prometheus / Grafana |
+| Containerization | Docker |
+| Orchestration | Kubernetes |
+| CI/CD | GitHub Actions |
