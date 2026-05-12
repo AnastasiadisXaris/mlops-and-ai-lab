@@ -2,73 +2,17 @@
 
 ## Purpose
 
-This folder contains structured notes, research insights, conceptual mappings, engineering observations, learning summaries, academic reflections, architecture explanations, experimental findings, and technical documentation across all domains of the repository.
+This folder contains structured notes, research insights, conceptual mappings, engineering observations, learning summaries, academic reflections, architecture explanations, and experimental findings across all domains of the repository.
 
-The goal is to create a centralized intellectual workspace for:
-
-- AI engineering
-- Machine Learning
-- MLOps
-- DevOps
-- software architecture
-- Django
-- LLMs
-- marketing AI
-- research
-- system design
-- experimentation
-- thesis development
+The goal is to create a centralized intellectual workspace — a second brain for engineering and research — where ideas evolve into architectures, implementations, experiments, papers, and systems.
 
 ---
 
-# Why Notes Matter
-
-Complex systems and research evolve through:
-
-```text
-incremental understanding
-```
-
-Notes transform scattered information into:
-
-- reusable knowledge
-- conceptual clarity
-- operational memory
-- engineering insight
-
----
-
-# Knowledge Philosophy
-
-This folder is not merely:
-
-```text
-random markdown files
-```
-
-It is intended to become:
-
-```text
-a second brain for engineering and research
-```
-
-where ideas evolve into:
-
-- architectures
-- implementations
-- experiments
-- papers
-- systems
-- products
-
----
-
-# Recommended Folder Structure
+## Folder Structure
 
 ```text
 notes/
 │
-├── README.md
 ├── ai/
 ├── ml/
 ├── mlops/
@@ -102,10 +46,6 @@ notes/
 └── glossary/
 ```
 
----
-
-# Folder Descriptions
-
 | Folder | Purpose |
 |---|---|
 | ai | general AI concepts |
@@ -117,282 +57,99 @@ notes/
 | marketing-ai | AI marketing systems |
 | research | academic research notes |
 | thesis | doctoral research |
-| papers | paper summaries |
 | architectures | architecture notes |
 | algorithms | algorithm explanations |
 | experiments | experiment tracking |
 | prompts | prompt engineering |
-| datasets | dataset observations |
-| deployments | deployment workflows |
 | debugging | debugging logs |
-| tutorials | tutorials and walkthroughs |
 | roadmaps | learning paths |
-| learning | educational summaries |
 | ideas | project ideas |
-| business | business concepts |
-| product | product strategy |
 | system-design | distributed systems |
-| references | references and citations |
-| diagrams | visual notes |
-| summaries | condensed summaries |
-| meeting-notes | meetings and discussions |
-| implementations | implementation details |
-| workflows | engineering workflows |
 | glossary | terminology |
 
 ---
 
-# Recommended Note Types
+## Note Types
+
+### 1. Concept Notes
+
+Explain important ideas clearly and concisely.
+
+**Example:** *What is Retrieval-Augmented Generation?*
+
+### 2. Architecture Notes
+
+Document system structures, design decisions, and trade-offs.
+
+**Example:** *How recommendation pipelines scale*
+
+### 3. Research Notes
+
+Capture academic insights, theoretical connections, and open questions.
+
+**Example:** *Conjoint Analysis limitations in ML personalization*
+
+### 4. Experiment Notes
+
+Track experiments, configurations, results, and lessons learned.
+
+**Example:** *Embedding comparison experiments*
+
+### 5. Debugging Notes
+
+Document operational failures, root causes, and solutions.
+
+**Example:** *Redis queue latency investigation*
+
+### 6. Learning Notes
+
+Condense tutorials, books, and courses into reusable summaries.
+
+**Example:** *Kubernetes networking explained*
 
 ---
 
-# 1. Concept Notes
-
-Explain important ideas.
-
-Example:
-
-```text
-What is Retrieval-Augmented Generation?
-```
-
----
-
-# 2. Architecture Notes
-
-Document system structures.
-
-Example:
-
-```text
-How recommendation pipelines scale
-```
-
----
-
-# 3. Research Notes
-
-Capture academic insights.
-
-Example:
-
-```text
-Conjoint Analysis limitations in ML personalization
-```
-
----
-
-# 4. Experiment Notes
-
-Track experiments and findings.
-
-Example:
-
-```text
-Embedding comparison experiments
-```
-
----
-
-# 5. Debugging Notes
-
-Document operational failures and solutions.
-
-Example:
-
-```text
-Redis queue latency investigation
-```
-
----
-
-# 6. Learning Notes
-
-Condense tutorials/books/courses.
-
-Example:
-
-```text
-Kubernetes networking explained
-```
-
----
-
-# Recommended Note Structure
+## Note Template
 
 ```markdown
 # Title
 
 ## Purpose
-
 ## Key Concepts
-
 ## Examples
-
 ## Architecture
-
 ## Limitations
-
 ## References
-
 ## Personal Insights
 ```
 
 ---
 
-# Linking Notes
+## File Naming
 
-Prefer interconnected notes.
+**Good:** `rag-chunking-strategies.md` · `django-caching-patterns.md` · `conjoint-analysis-ml-notes.md`
+
+**Avoid:** `notes-final-real-v2.md`
 
 ---
 
-# Example
+## Knowledge Flow
 
 ```text
-RAG Systems
-    ↓
-Embeddings
-    ↓
-Vector Databases
-    ↓
-LLMOps
+Learn → Summarize → Connect → Implement → Refine
 ```
 
----
-
-# Recommended Markdown Practices
-
-Use:
-
-- headers
-- diagrams
-- tables
-- code blocks
-- references
-- summaries
+Prefer **interconnected notes** over isolated files. Link related concepts across domains.
 
 ---
 
-# Example Note Naming
+## Key Research Areas
 
-Good:
-
-```text
-rag-chunking-strategies.md
-django-caching-patterns.md
-conjoint-analysis-ml-notes.md
-```
-
-Bad:
-
-```text
-notes-final-real-v2.md
-```
-
-A file naming ritual older than distributed systems themselves.
+Notes especially relevant to this ecosystem: utility theory · conjoint analysis · recommendation systems · consumer preference modeling · behavioral analytics · LLM personalization · ML-driven decision systems
 
 ---
 
-# Notes for Research
-
-Important for your ecosystem:
-
-- utility theory
-- conjoint analysis
-- recommendation systems
-- consumer preference modeling
-- behavioral analytics
-- LLM personalization
-- ML-driven decision systems
-
----
-
-# Example Research Knowledge Flow
-
-```text
-Theory
-    ↓
-Literature Review
-    ↓
-Experimental Design
-    ↓
-Implementation
-    ↓
-Evaluation
-```
-
----
-
-# AI Engineering Notes
-
-Useful note areas:
-
-- transformers
-- embeddings
-- vector search
-- inference optimization
-- recommendation architectures
-- personalization systems
-
----
-
-# DevOps Notes
-
-Useful topics:
-
-- Kubernetes
-- Docker
-- CI/CD
-- observability
-- deployment strategies
-
----
-
-# Prompt Engineering Notes
-
-Track:
-
-- prompting patterns
-- agent workflows
-- retrieval prompts
-- system prompts
-- evaluation strategies
-
----
-
-# Knowledge Management Strategy
-
-Recommended flow:
-
-```text
-Learn
-    ↓
-Summarize
-    ↓
-Connect
-    ↓
-Implement
-    ↓
-Refine
-```
-
----
-
-# Long-Term Research Value
-
-Over time this folder becomes:
-
-```text
-Research Archive
-    ↓
-Engineering Intelligence Layer
-    ↓
-Personal Technical Knowledge Graph
-```
-
----
-
-# Recommended Tools
+## Recommended Tools
 
 | Purpose | Tool |
 |---|---|
@@ -404,39 +161,13 @@ Personal Technical Knowledge Graph
 
 ---
 
-# Common Mistakes
+## Best Practices
 
-- undocumented experiments
-- fragmented knowledge
-- inconsistent naming
-- no linking between ideas
-- storing knowledge only mentally
-
----
-
-# Best Practices
-
-- write notes continuously
+- write notes continuously, not retrospectively
 - summarize immediately after learning
-- version important notes
-- connect related concepts
-- document failures and insights
-- revisit and refine notes
+- connect related concepts across folders
+- document failures and unexpected findings
+- use consistent file naming
+- revisit and refine over time
 
----
-
-# Long-Term Vision
-
-This folder evolves into:
-
-```text
-Engineering Memory System
-    ↓
-Research Intelligence Archive
-    ↓
-Cognitive Infrastructure for AI Development
-```
-
-Notes are not passive storage.
-
-They are the externalized scaffolding of evolving technical thought.
+**Common pitfalls:** undocumented experiments · fragmented knowledge · inconsistent naming · no linking between ideas · storing knowledge only mentally
