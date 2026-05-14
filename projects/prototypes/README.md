@@ -2,10 +2,24 @@
 
 ## Purpose
 
-MVPs and rapid proof-of-concept systems.
+Prototype projects.
 
----
+## What Belongs Here
 
-# Goal
+- quick MVPs
+- proof-of-concept implementations
+- early explorations
 
-Fast iteration and validation.
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

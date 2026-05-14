@@ -1,13 +1,25 @@
-# Project Templates
+# Templates
 
 ## Purpose
 
-Reusable project templates and boilerplates.
+Project templates.
 
----
+## What Belongs Here
 
-# Examples
+- starter templates
+- boilerplates
+- scaffolding
 
-- FastAPI templates
-- Django templates
-- ML templates
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

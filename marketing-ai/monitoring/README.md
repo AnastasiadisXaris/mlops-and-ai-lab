@@ -1,14 +1,26 @@
-# Marketing AI Monitoring
+# Monitoring
 
 ## Purpose
 
-Monitoring marketing AI systems and KPIs.
+Marketing AI monitoring.
 
----
+## What Belongs Here
 
-# Monitor
+- model drift
+- campaign performance
+- recommendation quality
+- data pipeline health
 
-- conversion rate
-- recommendation CTR
-- drift
-- latency
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

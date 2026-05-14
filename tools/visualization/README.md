@@ -1,13 +1,28 @@
-# Visualization Tools
+# Visualization
 
 ## Purpose
 
-Data visualization and dashboard ecosystems.
+Visualization tools.
 
----
+## What Belongs Here
 
-# Tools
-
-- Plotly
 - Matplotlib
+- Plotly
+- Seaborn
 - Streamlit
+- Grafana
+- D3.js
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

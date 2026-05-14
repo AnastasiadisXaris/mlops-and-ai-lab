@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Opinion mining and emotional analysis.
+Sentiment analysis for marketing.
 
----
+## What Belongs Here
 
-# Data Sources
+- review mining
+- brand monitoring
+- aspect-level sentiment
+- ABSA pipelines
 
-- reviews
-- social media
-- surveys
-- customer feedback
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

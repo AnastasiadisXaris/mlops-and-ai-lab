@@ -1,13 +1,28 @@
-# CLI Tools
+# Cli
 
 ## Purpose
 
-Command-line engineering and automation tooling.
+CLI tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - git
+- docker
 - kubectl
+- terraform
 - gh
+- dvc — usage and tips
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

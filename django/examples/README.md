@@ -2,14 +2,25 @@
 
 ## Purpose
 
-Reference implementations and example projects.
+Django working examples.
 
----
+## What Belongs Here
 
-# Example Categories
+- complete mini-apps
+- API examples
+- auth examples
+- integration demos
 
-- REST APIs
-- recommendation systems
-- JWT auth
-- RAG integration
-- Celery workflows
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

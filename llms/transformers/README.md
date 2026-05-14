@@ -2,14 +2,25 @@
 
 ## Purpose
 
-Transformer neural network architecture and attention mechanisms.
+Transformer architecture deep-dives.
 
----
-
-# Topics
+## What Belongs Here
 
 - self-attention
-- positional encoding
-- encoder/decoder
 - multi-head attention
 - feed-forward layers
+- positional encoding
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

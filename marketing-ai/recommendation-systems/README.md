@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Personalized recommendation engines for marketing systems.
+Recommendation systems for marketing.
 
----
+## What Belongs Here
 
-# Topics
+- product recommendations
+- content recommendations
+- cross-sell
+- upsell
 
-- collaborative filtering
-- ranking models
-- personalization
-- hybrid recommenders
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

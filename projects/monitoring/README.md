@@ -1,14 +1,25 @@
-# Project Monitoring
+# Monitoring
 
 ## Purpose
 
-Monitoring and observability for deployed systems.
+Monitoring system projects.
 
----
+## What Belongs Here
 
-# Monitor
+- drift detection dashboards
+- alerting systems
+- observability stacks
 
-- latency
-- errors
-- drift
-- infrastructure health
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

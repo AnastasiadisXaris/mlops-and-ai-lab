@@ -1,13 +1,26 @@
-# Container Tools
+# Containers
 
 ## Purpose
 
-Containerization and image management tooling.
+Container tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - Docker
+- Docker Compose
 - Podman
-- Buildah
+- container registries
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

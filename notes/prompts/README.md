@@ -1,14 +1,25 @@
-# Prompt Notes
+# Prompts
 
 ## Purpose
 
-Prompt engineering strategies and workflows.
+Prompt engineering notes.
 
----
+## What Belongs Here
 
-# Topics
+- effective prompts
+- prompt patterns
+- model-specific observations
 
-- CoT
-- ReAct
-- system prompts
-- structured prompting
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

@@ -1,13 +1,27 @@
-# Vector Database Tools
+# Vector Databases
 
 ## Purpose
 
-Semantic retrieval and vector search ecosystems.
+Vector database tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - Qdrant
-- Pinecone
 - ChromaDB
+- Pinecone
+- FAISS
+- pgvector — setup and usage
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

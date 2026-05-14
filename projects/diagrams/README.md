@@ -1,13 +1,25 @@
-# Project Diagrams
+# Diagrams
 
 ## Purpose
 
-Architecture and workflow diagrams.
+Project architecture diagrams.
 
----
+## What Belongs Here
 
-# Examples
+- system designs
+- data flows
+- deployment architectures
 
-- ML pipelines
-- SaaS architecture
-- deployment topology
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

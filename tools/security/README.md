@@ -1,13 +1,27 @@
-# Security Tools
+# Security
 
 ## Purpose
 
-Security analysis and protection tooling.
+Security tools.
 
----
+## What Belongs Here
 
-# Tools
+- bandit
+- trivy
+- snyk
+- OWASP tools
+- secrets scanning
 
-- Trivy
-- Vault
-- Wazuh
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

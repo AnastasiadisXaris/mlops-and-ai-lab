@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Reusable templates and boilerplates.
+Tool configuration templates.
 
----
+## What Belongs Here
 
-# Examples
-
-- Docker templates
+- config templates
 - CI/CD templates
-- FastAPI templates
+- Dockerfile templates
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

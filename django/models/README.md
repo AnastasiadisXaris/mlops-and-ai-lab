@@ -2,13 +2,26 @@
 
 ## Purpose
 
-ORM model definitions and domain entities.
+Django ORM models.
 
----
+## What Belongs Here
 
-# Topics
-
+- model design
 - relationships
-- constraints
+- custom managers
+- abstract models
 - indexes
-- model managers
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

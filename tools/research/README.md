@@ -1,13 +1,26 @@
-# Research Tools
+# Research
 
 ## Purpose
 
-Academic research and scientific workflows.
+Research tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - Zotero
+- Obsidian
 - LaTeX
-- Mendeley
+- academic writing and citation tools
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

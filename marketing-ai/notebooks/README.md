@@ -1,13 +1,26 @@
-# Marketing Notebooks
+# Notebooks
 
 ## Purpose
 
-Interactive experimentation and analytics notebooks.
+Marketing AI notebooks.
 
----
+## What Belongs Here
 
-# Topics
+- EDA
+- model training
+- campaign analysis
+- preference modeling experiments
 
-- segmentation
-- conjoint analysis
-- predictive analytics
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

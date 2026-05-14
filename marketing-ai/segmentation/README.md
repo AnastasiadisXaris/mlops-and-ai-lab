@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Customer grouping and behavioral segmentation.
+Customer segmentation.
 
----
+## What Belongs Here
 
-# Techniques
+- RFM segmentation
+- behavioral clustering
+- psychographic profiling
+- dynamic segments
 
-- clustering
-- psychographic segmentation
-- demographic analysis
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

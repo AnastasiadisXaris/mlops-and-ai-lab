@@ -1,14 +1,26 @@
-# Multi-Modal AI
+# Multi Modal
 
 ## Purpose
 
-Models combining text, image, audio, and video understanding.
+Multimodal AI systems.
 
----
+## What Belongs Here
 
-# Modalities
+- vision-language models
+- image + text
+- audio + text
+- cross-modal retrieval
 
-- text
-- image
-- audio
-- video
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

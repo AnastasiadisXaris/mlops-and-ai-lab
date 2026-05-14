@@ -1,13 +1,27 @@
-# AI Tools
+# Ai
 
 ## Purpose
 
-General AI development tools and frameworks.
+AI development tools.
 
----
+## What Belongs Here
 
-# Examples
-
-- OpenAI SDK
 - Hugging Face
 - PyTorch
+- TensorFlow
+- JAX
+- model hubs
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

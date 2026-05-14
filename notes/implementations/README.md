@@ -1,13 +1,25 @@
-# Implementation Notes
+# Implementations
 
 ## Purpose
 
-Technical implementation details and engineering decisions.
+Implementation notes.
 
----
+## What Belongs Here
 
-# Topics
+- code decisions
+- library choices
+- integration notes
 
-- APIs
-- ML pipelines
-- deployment decisions
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

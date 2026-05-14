@@ -2,13 +2,26 @@
 
 ## Purpose
 
-Performance and capability evaluation.
+LLM benchmarking.
 
----
+## What Belongs Here
 
-# Metrics
+- MMLU
+- HumanEval
+- HellaSwag
+- custom domain benchmarks
+- evaluation harnesses
 
-- latency
-- throughput
-- reasoning
-- memory usage
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

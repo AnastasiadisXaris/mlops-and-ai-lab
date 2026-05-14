@@ -1,13 +1,25 @@
-# Business Notes
+# Business
 
 ## Purpose
 
-Business models and strategic planning.
+Business and product notes.
 
----
+## What Belongs Here
 
-# Topics
+- product strategy
+- market insights
+- competitive analysis
 
-- SaaS models
-- monetization
-- AI startups
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

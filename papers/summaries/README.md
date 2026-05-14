@@ -1,14 +1,23 @@
-# Paper Summaries
+# Summaries
 
 ## Purpose
 
-Condensed summaries of research papers.
+Paper summaries.
 
----
+## What Belongs Here
 
-# Structure
+- structured 1-page summaries per paper
 
-- objective
-- methods
-- findings
-- limitations
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

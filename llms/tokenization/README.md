@@ -2,13 +2,26 @@
 
 ## Purpose
 
-Text-to-token conversion systems.
+Tokenization in LLMs.
 
----
-
-# Topics
+## What Belongs Here
 
 - BPE
 - SentencePiece
-- token limits
-- tokenizer efficiency
+- tokenizer selection
+- token counting
+- context window management
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

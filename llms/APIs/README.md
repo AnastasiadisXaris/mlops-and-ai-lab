@@ -1,14 +1,28 @@
-# LLM APIs
+# Apis
 
 ## Purpose
 
-API integrations for commercial and open-source LLM providers.
+LLM API integrations.
 
----
+## What Belongs Here
 
-# Providers
-
-- OpenAI
 - Anthropic
-- Google
-- Cohere
+- OpenAI
+- Groq
+- HuggingFace Inference API
+- rate limiting
+- error handling
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

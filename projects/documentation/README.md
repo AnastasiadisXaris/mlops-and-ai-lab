@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Technical and operational documentation.
+Project documentation.
 
----
+## What Belongs Here
 
-# Include
-
+- technical docs
 - architecture docs
-- setup guides
-- deployment docs
+- API docs
+- runbooks
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

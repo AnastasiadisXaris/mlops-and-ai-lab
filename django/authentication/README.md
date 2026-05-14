@@ -2,13 +2,27 @@
 
 ## Purpose
 
-User identity verification systems.
+Django authentication.
 
----
-
-# Recommended Methods
+## What Belongs Here
 
 - JWT
 - OAuth2
-- Session Authentication
-- Social Login
+- session auth
+- social login
+- custom user models
+- token management
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

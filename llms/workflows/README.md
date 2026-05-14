@@ -1,13 +1,26 @@
-# LLM Workflows
+# Workflows
 
 ## Purpose
 
-Multi-step AI execution pipelines.
+LLM workflow patterns.
 
----
+## What Belongs Here
 
-# Examples
+- multi-step pipelines
+- conditional routing
+- human-in-the-loop
+- approval workflows
 
-- retrieval pipelines
-- agent workflows
-- prompt chains
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

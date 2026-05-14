@@ -1,13 +1,25 @@
-# Django Tools
+# Django
 
 ## Purpose
 
-Django ecosystem tools and extensions.
+Django-specific tools.
 
----
+## What Belongs Here
 
-# Examples
+- django-debug-toolbar
+- django-extensions
+- drf-spectacular
 
-- DRF
-- Celery
-- Django Channels
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

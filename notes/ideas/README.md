@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Project ideas and experimental concepts.
+Project and research ideas.
 
----
+## What Belongs Here
 
-# Examples
+- backlog ideas
+- feature concepts
+- research directions
 
-- AI SaaS ideas
-- recommendation systems
-- LLM assistants
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

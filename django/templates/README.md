@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Server-side rendering templates.
+Django templates.
 
----
-
-# Topics
+## What Belongs Here
 
 - template inheritance
-- reusable components
-- dynamic rendering
+- template tags
+- custom filters
+- Jinja2 integration
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

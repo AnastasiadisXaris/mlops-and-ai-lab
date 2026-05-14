@@ -1,13 +1,25 @@
-# Research Experiments
+# Experiments
 
 ## Purpose
 
-Experimental designs and empirical evaluations.
+Experimental result papers.
 
----
+## What Belongs Here
 
-# Topics
+- empirical studies
+- ablations
+- comparative experiments
 
-- benchmarks
-- validation
-- reproducibility
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

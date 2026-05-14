@@ -1,13 +1,27 @@
-# Debugging Tools
+# Debugging
 
 ## Purpose
 
-Debugging and troubleshooting utilities.
+Debugging tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - pdb
-- logs
-- profiling
+- debugpy
+- logging
+- tracing
+- profiling tools
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

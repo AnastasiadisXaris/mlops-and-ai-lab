@@ -1,16 +1,26 @@
-# LLM Architecture
+# Architecture
 
 ## Purpose
 
-Core transformer and LLM architecture concepts.
+LLM architecture notes.
 
----
+## What Belongs Here
 
-# Topics
+- transformer internals
+- attention mechanisms
+- positional encoding
+- KV cache
 
-- transformers
-- attention
-- embeddings
-- decoder-only models
-- scaling laws
-- context windows
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

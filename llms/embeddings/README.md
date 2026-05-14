@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Semantic vector representations for language and retrieval systems.
+Embedding models and techniques.
 
----
+## What Belongs Here
 
-# Use Cases
+- Sentence Transformers
+- OpenAI embeddings
+- fine-tuning embeddings
+- MTEB benchmarks
 
-- semantic search
-- clustering
-- retrieval
-- recommendation systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

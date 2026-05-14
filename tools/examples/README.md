@@ -1,13 +1,23 @@
-# Tool Examples
+# Examples
 
 ## Purpose
 
-Reference examples and implementation demos.
+Tool usage examples.
 
----
+## What Belongs Here
 
-# Examples
+- real examples and configurations for tools in this ecosystem
 
-- Docker examples
-- FastAPI examples
-- ML pipelines
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

@@ -1,14 +1,25 @@
-# Paper Templates
+# Templates
 
 ## Purpose
 
-Academic templates for journals and conferences.
+Paper writing templates.
 
----
+## What Belongs Here
 
-# Examples
+- abstract templates
+- section templates
+- review templates
 
-- IEEE
-- Elsevier
-- Springer
-- ACM
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

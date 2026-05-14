@@ -1,13 +1,26 @@
-# Multi-Tenancy
+# Multi Tenancy
 
 ## Purpose
 
-Tenant isolation for SaaS applications.
+Django multi-tenancy patterns.
 
----
+## What Belongs Here
 
-# Strategies
-
-- shared DB
+- tenant isolation
+- shared schema
 - separate schema
-- separate DB
+- row-level isolation
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

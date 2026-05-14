@@ -1,20 +1,27 @@
-# WebSockets
+# Websocket
 
 ## Purpose
 
-Real-time communication systems.
+Django WebSockets.
 
----
-
-# Recommended Stack
+## What Belongs Here
 
 - Django Channels
-- Redis
-
----
-
-# Use Cases
-
+- ASGI
+- Redis channel layer
+- real-time notifications
 - chat
-- notifications
-- live dashboards
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

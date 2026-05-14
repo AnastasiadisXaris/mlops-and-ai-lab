@@ -1,13 +1,25 @@
-# Backend Projects
+# Backend
 
 ## Purpose
 
-Backend systems and service architectures.
+Backend system projects.
 
----
+## What Belongs Here
 
-# Topics
+- Django APIs
+- FastAPI services
+- microservices
 
-- APIs
-- databases
-- authentication
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

@@ -1,13 +1,26 @@
-# Marketing Analytics
+# Analytics
 
 ## Purpose
 
-Business intelligence and analytics systems.
+Marketing analytics systems.
 
----
+## What Belongs Here
 
-# Topics
+- funnel analysis
+- cohort analysis
+- attribution modeling
+- KPI dashboards
 
-- KPI tracking
-- attribution
-- campaign analytics
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

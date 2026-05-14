@@ -1,13 +1,26 @@
-# Marketing AI Examples
+# Examples
 
 ## Purpose
 
-Reference implementations and example systems.
+Marketing AI working examples.
 
----
+## What Belongs Here
 
-# Examples
+- conjoint demos
+- recommendation demos
+- segmentation notebooks
+- churn prediction
 
-- recommendation engines
-- conjoint pipelines
-- segmentation dashboards
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

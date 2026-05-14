@@ -1,13 +1,26 @@
-# NLP Papers
+# Nlp
 
 ## Purpose
 
-Natural Language Processing research literature.
+NLP papers.
 
----
+## What Belongs Here
 
-# Topics
-
-- embeddings
-- transformers
+- ABSA
 - sentiment analysis
+- information extraction
+- text classification
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

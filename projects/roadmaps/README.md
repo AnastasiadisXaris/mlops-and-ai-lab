@@ -1,13 +1,26 @@
-# Project Roadmaps
+# Roadmaps
 
 ## Purpose
 
-Strategic planning and implementation phases.
+Project roadmaps.
 
----
-
-# Include
+## What Belongs Here
 
 - milestones
-- MVP planning
-- scaling phases
+- timelines
+- feature plans
+- release schedules
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

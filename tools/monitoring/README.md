@@ -1,13 +1,28 @@
-# Monitoring Tools
+# Monitoring
 
 ## Purpose
 
-Observability and monitoring ecosystems.
+Monitoring tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - Prometheus
 - Grafana
 - Loki
+- Jaeger
+- Sentry
+- alerting tools
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

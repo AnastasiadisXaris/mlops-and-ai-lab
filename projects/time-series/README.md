@@ -1,13 +1,25 @@
-# Time-Series Projects
+# Time Series
 
 ## Purpose
 
-Forecasting and sequential prediction systems.
+Time-series project implementations.
 
----
+## What Belongs Here
 
-# Topics
-
-- sales forecasting
+- forecasting systems
 - anomaly detection
-- trend analysis
+- sequential models
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

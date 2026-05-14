@@ -1,14 +1,26 @@
-# Docker Integration
+# Docker
 
 ## Purpose
 
-Containerized Django deployments.
+Docker for Django.
 
----
-
-# Topics
+## What Belongs Here
 
 - Dockerfiles
-- Compose
-- container optimization
-- production containers
+- multi-stage builds
+- docker-compose for local dev
+- entrypoints
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

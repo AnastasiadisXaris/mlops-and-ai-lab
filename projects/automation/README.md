@@ -1,13 +1,26 @@
-# Automation Projects
+# Automation
 
 ## Purpose
 
-Workflow automation and intelligent automation systems.
+Automation projects.
 
----
+## What Belongs Here
 
-# Examples
+- workflow automation
+- task automation
+- RPA
+- scheduled jobs
 
-- reporting automation
-- AI agents
-- deployment automation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

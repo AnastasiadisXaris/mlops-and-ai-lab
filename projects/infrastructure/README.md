@@ -1,13 +1,25 @@
-# Infrastructure Projects
+# Infrastructure
 
 ## Purpose
 
-Operational infrastructure and cloud-native systems.
+Infrastructure projects.
 
----
+## What Belongs Here
 
-# Topics
+- Terraform configs
+- Kubernetes manifests
+- Docker setups
 
-- networking
-- observability
-- orchestration
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

@@ -1,13 +1,26 @@
-# NLP Projects
+# Nlp
 
 ## Purpose
 
-Natural Language Processing applications.
+NLP project implementations.
 
----
+## What Belongs Here
 
-# Topics
+- text classifiers
+- NER systems
+- summarizers
+- ABSA pipelines
 
-- sentiment analysis
-- embeddings
-- semantic search
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

@@ -1,13 +1,25 @@
-# Production Systems
+# Production
 
 ## Purpose
 
-Production-ready deployments and operational systems.
+Production system projects.
 
----
+## What Belongs Here
 
-# Topics
+- hardened
+- deployed
+- monitored production implementations
 
-- scalability
-- monitoring
-- deployment
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

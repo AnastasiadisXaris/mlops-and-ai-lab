@@ -1,13 +1,26 @@
-# Utility Theory Papers
+# Utility Theory
 
 ## Purpose
 
-Research on utility theory and rational choice.
+Utility theory papers.
 
----
+## What Belongs Here
 
-# Topics
+- von Neumann-Morgenstern
+- MAUT
+- prospect theory
+- rank-dependent utility
 
-- expected utility
-- preference structures
-- decision under uncertainty
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

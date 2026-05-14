@@ -1,14 +1,25 @@
-# LLM Datasets
+# Datasets
 
 ## Purpose
 
-Datasets used for LLM training, evaluation, and experimentation.
+LLM training and evaluation datasets.
 
----
+## What Belongs Here
 
-# Examples
+- instruction datasets
+- preference datasets
+- evaluation sets
 
-- Common Crawl
-- Wikipedia
-- The Pile
-- OpenWebText
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

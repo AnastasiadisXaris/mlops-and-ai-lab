@@ -1,14 +1,26 @@
-# Media Files
+# Media
 
 ## Purpose
 
-User-uploaded content and media storage.
+Django media file handling.
 
----
+## What Belongs Here
 
-# Examples
+- MEDIA_ROOT
+- S3 storage backends
+- file uploads
+- image processing
 
-- profile images
-- PDFs
-- reports
-- datasets
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

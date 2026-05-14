@@ -1,14 +1,28 @@
-# LLM Papers
+# Llms
 
 ## Purpose
 
-Research on Large Language Models and generative AI.
+LLM research papers.
 
----
+## What Belongs Here
 
-# Topics
+- GPT
+- BERT
+- T5
+- LLaMA
+- alignment papers
+- scaling laws
 
-- transformers
-- prompting
-- alignment
-- RAG
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

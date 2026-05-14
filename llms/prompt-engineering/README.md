@@ -2,14 +2,26 @@
 
 ## Purpose
 
-Advanced prompt optimization and orchestration.
+Advanced prompt engineering.
 
----
+## What Belongs Here
 
-# Topics
-
+- chain-of-thought
+- few-shot
 - ReAct
-- prompt chaining
-- self-consistency
-- role prompting
 - structured outputs
+- prompt chaining
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

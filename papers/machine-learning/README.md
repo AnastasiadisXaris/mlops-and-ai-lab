@@ -1,13 +1,26 @@
-# Machine Learning Papers
+# Machine Learning
 
 ## Purpose
 
-Machine Learning theory and applied ML systems.
+Machine learning papers.
 
----
+## What Belongs Here
 
-# Topics
-
-- supervised learning
+- supervised
+- unsupervised
+- reinforcement learning
 - deep learning
-- explainability
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

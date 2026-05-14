@@ -2,13 +2,26 @@
 
 ## Purpose
 
-Event-driven hooks inside Django applications.
+Django signals.
 
----
+## What Belongs Here
 
-# Use Cases
+- post_save
+- pre_delete
+- custom signals
+- signal receivers
+- async signals
 
-- user creation
-- notifications
-- analytics events
-- audit logs
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

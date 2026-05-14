@@ -1,13 +1,25 @@
-# Decision Theory Papers
+# Decision Theory
 
 ## Purpose
 
-Research on decision-making models and theories.
+Decision theory papers.
 
----
+## What Belongs Here
 
-# Topics
+- utility theory
+- expected utility
+- normative vs descriptive models
 
-- rationality
-- uncertainty
-- decision systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

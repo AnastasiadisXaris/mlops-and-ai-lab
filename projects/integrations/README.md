@@ -2,12 +2,24 @@
 
 ## Purpose
 
-External platform and API integrations.
+Integration projects.
 
----
+## What Belongs Here
 
-# Examples
+- third-party APIs
+- webhooks
+- data connectors
 
-- Stripe
-- HubSpot
-- OpenAI APIs
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

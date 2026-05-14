@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Citation exports and bibliography references.
+Citation index.
 
----
+## What Belongs Here
 
-# Formats
+- frequently cited works
+- citation networks
+- key references per topic
 
-- BibTeX
-- RIS
-- APA
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

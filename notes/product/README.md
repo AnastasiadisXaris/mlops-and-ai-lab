@@ -1,13 +1,25 @@
-# Product Notes
+# Product
 
 ## Purpose
 
-Product strategy and platform design.
+Product notes.
 
----
+## What Belongs Here
 
-# Topics
+- feature ideas
+- UX observations
+- user feedback
 
-- UX
-- AI features
-- product-market fit
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

@@ -1,13 +1,26 @@
-# Marketing AI Agents
+# Agents
 
 ## Purpose
 
-Autonomous marketing automation agents.
+AI agents for marketing.
 
----
+## What Belongs Here
 
-# Capabilities
+- campaign agents
+- reporting agents
+- content generation
+- customer support bots
 
-- reporting
-- optimization
-- analytics interpretation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

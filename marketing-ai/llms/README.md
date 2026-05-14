@@ -1,13 +1,26 @@
-# Marketing LLMs
+# Llms
 
 ## Purpose
 
-LLM applications for marketing systems.
+LLMs in marketing.
 
----
+## What Belongs Here
 
-# Use Cases
+- campaign copy generation
+- customer support
+- product description
+- sentiment analysis
 
-- campaign generation
-- AI copywriting
-- conversational agents
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

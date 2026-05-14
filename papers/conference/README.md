@@ -1,13 +1,27 @@
-# Conference Papers
+# Conference
 
 ## Purpose
 
-Conference submissions and presentation material.
+Conference papers and proceedings.
 
----
+## What Belongs Here
 
-# Include
+- NeurIPS
+- ICML
+- ACL
+- KDD
+- SIGIR — accepted and submitted papers
 
-- abstracts
-- proceedings
-- presentations
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

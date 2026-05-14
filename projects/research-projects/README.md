@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Experimental and academic implementations.
+Research project implementations.
 
----
+## What Belongs Here
 
-# Examples
+- thesis implementations
+- academic experiments
+- paper reproductions
 
-- thesis systems
-- benchmarks
-- ML experiments
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

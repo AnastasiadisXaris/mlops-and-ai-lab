@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Draft manuscripts and working papers.
+Paper drafts and manuscripts.
 
----
+## What Belongs Here
 
-# Include
+- work-in-progress papers
+- submission versions
+- revision history
 
-- review drafts
-- revisions
-- publication versions
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

@@ -1,13 +1,25 @@
-# Dataset Notes
+# Datasets
 
 ## Purpose
 
-Observations and metadata about datasets.
+Dataset notes.
 
----
+## What Belongs Here
 
-# Topics
+- data quality observations
+- preprocessing decisions
+- dataset comparisons
 
-- schema analysis
-- bias
-- preprocessing
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

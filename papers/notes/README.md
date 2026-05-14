@@ -1,13 +1,25 @@
-# Paper Notes
+# Notes
 
 ## Purpose
 
-Reading notes and conceptual observations.
+Paper reading notes.
 
----
+## What Belongs Here
 
-# Topics
+- informal notes per paper
+- quick summaries
+- question lists
 
-- methodology notes
-- critique
-- synthesis
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

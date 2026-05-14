@@ -1,13 +1,26 @@
-# Marketing Automation
+# Automation
 
 ## Purpose
 
-Automated marketing workflows and pipelines.
+Marketing automation AI.
 
----
+## What Belongs Here
 
-# Examples
-
+- trigger-based campaigns
+- personalized workflows
 - email automation
-- campaign scheduling
-- recommendation refresh
+- A/B testing
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

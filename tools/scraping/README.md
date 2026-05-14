@@ -1,13 +1,27 @@
-# Scraping Tools
+# Scraping
 
 ## Purpose
 
-Data extraction and web scraping utilities.
+Web scraping tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - BeautifulSoup
 - Scrapy
+- Playwright
 - Selenium
+- scraping frameworks
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

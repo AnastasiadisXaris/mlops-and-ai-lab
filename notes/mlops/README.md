@@ -1,14 +1,25 @@
-# MLOps Notes
+# Mlops
 
 ## Purpose
 
-Operational Machine Learning systems and deployment workflows.
+MLOps notes.
 
----
+## What Belongs Here
 
-# Topics
+- pipeline observations
+- tooling comparisons
+- operational insights
 
-- pipelines
-- monitoring
-- deployment
-- retraining
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

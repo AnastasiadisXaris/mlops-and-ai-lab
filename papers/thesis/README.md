@@ -1,13 +1,25 @@
-# Thesis Papers
+# Thesis
 
 ## Purpose
 
-Doctoral dissertation literature and supporting studies.
+Doctoral thesis papers.
 
----
+## What Belongs Here
 
-# Topics
+- dissertation chapters
+- thesis-related publications
+- supervisor drafts
 
-- preference modeling
-- conjoint analysis
-- ML integration
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

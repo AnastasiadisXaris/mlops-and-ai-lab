@@ -1,14 +1,27 @@
-# LLM Safety
+# Safety
 
 ## Purpose
 
-AI safety and harmful output mitigation.
+LLM safety and guardrails.
 
----
+## What Belongs Here
 
-# Risks
-
-- hallucinations
 - prompt injection
 - jailbreaks
-- unsafe outputs
+- output filtering
+- content moderation
+- red-teaming
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

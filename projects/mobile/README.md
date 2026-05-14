@@ -1,13 +1,25 @@
-# Mobile Projects
+# Mobile
 
 ## Purpose
 
-Mobile integrations and mobile AI systems.
+Mobile application projects.
 
----
+## What Belongs Here
 
-# Technologies
-
-- Flutter
 - React Native
-- mobile APIs
+- Flutter
+- mobile ML inference
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

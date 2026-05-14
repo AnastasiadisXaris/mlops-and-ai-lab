@@ -1,13 +1,27 @@
-# RAG Papers
+# Rag
 
 ## Purpose
 
-Research on Retrieval-Augmented Generation systems.
+RAG papers.
 
----
+## What Belongs Here
 
-# Topics
+- Dense Passage Retrieval
+- RAG original
+- REALM
+- FiD
+- RETRO
 
-- retrieval
-- chunking
-- vector databases
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

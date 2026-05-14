@@ -1,13 +1,25 @@
-# Marketing AI Notes
+# Marketing Ai
 
 ## Purpose
 
-AI systems for marketing analytics and personalization.
+Marketing AI notes.
 
----
+## What Belongs Here
 
-# Topics
+- consumer insights
+- model observations
+- campaign findings
 
-- conjoint analysis
-- recommendation systems
-- segmentation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

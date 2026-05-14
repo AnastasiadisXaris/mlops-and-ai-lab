@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Reusable engineering and automation scripts.
+Utility scripts.
 
----
+## What Belongs Here
 
-# Examples
+- helper scripts
+- automation scripts
+- one-off tools
 
-- deployment scripts
-- cleanup scripts
-- preprocessing scripts
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

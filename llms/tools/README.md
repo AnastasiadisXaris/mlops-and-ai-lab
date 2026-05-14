@@ -1,14 +1,27 @@
-# Tool Calling
+# Tools
 
 ## Purpose
 
-LLM integration with external tools and APIs.
+LLM tooling ecosystem.
 
----
+## What Belongs Here
 
-# Examples
+- LangChain
+- LlamaIndex
+- Ollama
+- vLLM
+- Hugging Face tools — installation and usage
 
-- web search
-- databases
-- code execution
-- automation tools
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

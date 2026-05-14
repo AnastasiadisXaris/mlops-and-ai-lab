@@ -1,13 +1,25 @@
-# Project Examples
+# Examples
 
 ## Purpose
 
-Reference implementations and showcase systems.
+Example and demo projects.
 
----
+## What Belongs Here
 
-# Examples
+- minimal working examples
+- proof-of-concepts
+- demos
 
-- AI SaaS
-- recommendation engines
-- RAG systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

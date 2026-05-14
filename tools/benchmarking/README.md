@@ -1,13 +1,26 @@
-# Benchmarking Tools
+# Benchmarking
 
 ## Purpose
 
-Performance evaluation and benchmarking tooling.
+Benchmarking tools.
 
----
+## What Belongs Here
 
-# Metrics
+- pytest-benchmark
+- locust
+- k6
+- profiling tools
 
-- latency
-- throughput
-- memory usage
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

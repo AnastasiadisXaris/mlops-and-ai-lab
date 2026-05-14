@@ -1,13 +1,25 @@
-# Marketing AI Projects
+# Marketing Ai
 
 ## Purpose
 
-AI-driven marketing systems and analytics platforms.
+Marketing AI projects.
 
----
+## What Belongs Here
 
-# Examples
+- recommendation engines
+- conjoint tools
+- segmentation apps
 
-- segmentation
-- conjoint analysis
-- campaign optimization
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

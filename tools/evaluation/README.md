@@ -1,13 +1,25 @@
-# Evaluation Tools
+# Evaluation
 
 ## Purpose
 
-Evaluation frameworks and validation systems.
+Evaluation tools.
 
----
+## What Belongs Here
 
-# Examples
+- RAGAS
+- Eleuther LM eval harness
+- domain benchmark tools
 
-- Evidently
-- MLflow
-- custom evaluation pipelines
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

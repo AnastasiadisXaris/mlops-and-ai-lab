@@ -1,13 +1,25 @@
-# Research Methodologies
+# Methodologies
 
 ## Purpose
 
-Methodological frameworks and research methods.
+Research methodology papers.
 
----
+## What Belongs Here
 
-# Topics
+- survey design
+- experimental design
+- statistical methods
 
-- qualitative methods
-- quantitative analysis
-- mixed methods
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

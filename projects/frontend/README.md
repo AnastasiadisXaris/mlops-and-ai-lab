@@ -1,13 +1,26 @@
-# Frontend Projects
+# Frontend
 
 ## Purpose
 
-Frontend applications and UI systems.
+Frontend project implementations.
 
----
+## What Belongs Here
 
-# Technologies
-
-- React
+- React apps
 - Next.js
-- TailwindCSS
+- dashboards
+- UI components
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

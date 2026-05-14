@@ -1,14 +1,27 @@
-# LLMOps
+# Llmops
 
 ## Purpose
 
-Operational lifecycle management for LLM systems.
+LLMOps practices.
 
----
+## What Belongs Here
 
-# Includes
-
-- deployment
-- evaluation
-- monitoring
 - prompt versioning
+- output monitoring
+- hallucination tracking
+- A/B testing
+- cost tracking
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

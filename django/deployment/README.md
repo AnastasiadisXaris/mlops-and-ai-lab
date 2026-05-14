@@ -2,16 +2,26 @@
 
 ## Purpose
 
-Production deployment architecture.
+Django deployment configuration.
 
----
+## What Belongs Here
 
-# Recommended Stack
+- Gunicorn
+- Nginx
+- Supervisor
+- environment configs
+- health checks
+
+## Naming Convention
 
 ```text
-Nginx
-    ↓
-Gunicorn
-    ↓
-Django
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
 ```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

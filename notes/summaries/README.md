@@ -2,12 +2,23 @@
 
 ## Purpose
 
-Condensed summaries of complex topics.
+Summary notes.
 
----
+## What Belongs Here
 
-# Examples
+- condensed overviews of topics
+- quick references
 
-- paper summaries
-- architecture summaries
-- book notes
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

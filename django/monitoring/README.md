@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Application observability and metrics.
+Django monitoring and observability.
 
----
+## What Belongs Here
 
-# Monitor
+- Prometheus metrics
+- Sentry
+- health check endpoints
+- structured logging
 
-- request latency
-- errors
-- DB performance
-- task queues
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

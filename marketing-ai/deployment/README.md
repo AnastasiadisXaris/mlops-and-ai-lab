@@ -1,13 +1,26 @@
-# Marketing AI Deployment
+# Deployment
 
 ## Purpose
 
-Deployment architecture for marketing AI systems.
+Marketing AI deployment.
 
----
+## What Belongs Here
 
-# Topics
+- model serving
+- API endpoints
+- real-time scoring
+- batch prediction pipelines
 
-- Docker
-- Kubernetes
-- scalable inference
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

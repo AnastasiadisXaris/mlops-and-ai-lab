@@ -1,14 +1,28 @@
-# Kubernetes Integration
+# Kubernetes
 
 ## Purpose
 
-Kubernetes deployment and orchestration.
+Kubernetes for Django.
 
----
+## What Belongs Here
 
-# Topics
+- Deployments
+- Services
+- Ingress
+- HPA
+- secrets
+- configmaps for Django apps
 
-- deployments
-- services
-- ingress
-- autoscaling
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

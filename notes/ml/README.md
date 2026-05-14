@@ -1,14 +1,25 @@
-# Machine Learning Notes
+# Ml
 
 ## Purpose
 
-Machine Learning concepts, models, and experimentation notes.
+Machine learning notes.
 
----
+## What Belongs Here
 
-# Topics
+- training observations
+- model comparisons
+- metric interpretations
 
-- supervised learning
-- unsupervised learning
-- evaluation metrics
-- feature engineering
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

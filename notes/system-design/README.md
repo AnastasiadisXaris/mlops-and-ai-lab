@@ -1,13 +1,25 @@
-# System Design Notes
+# System Design
 
 ## Purpose
 
-Distributed systems and scalable architecture notes.
+System design notes.
 
----
+## What Belongs Here
 
-# Topics
-
-- caching
-- scaling
 - distributed systems
+- scalability patterns
+- design decisions
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

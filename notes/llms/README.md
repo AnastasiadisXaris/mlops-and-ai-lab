@@ -1,14 +1,25 @@
-# LLM Notes
+# Llms
 
 ## Purpose
 
-Large Language Model architectures and workflows.
+LLM engineering notes.
 
----
+## What Belongs Here
 
-# Topics
+- model behaviors
+- prompting observations
+- deployment findings
 
-- transformers
-- prompting
-- RAG
-- inference
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

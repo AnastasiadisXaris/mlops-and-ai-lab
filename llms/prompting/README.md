@@ -2,13 +2,26 @@
 
 ## Purpose
 
-Prompt design fundamentals for LLM interaction.
+Prompting fundamentals.
 
----
-
-# Techniques
+## What Belongs Here
 
 - zero-shot
 - few-shot
-- chain-of-thought
-- instruction prompting
+- system prompts
+- prompt templates
+- instruction design
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

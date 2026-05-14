@@ -1,13 +1,25 @@
-# Project Notebooks
+# Notebooks
 
 ## Purpose
 
-Interactive experimentation notebooks.
+Project notebooks.
 
----
+## What Belongs Here
 
-# Topics
+- exploratory analyses
+- model prototyping
+- visualization notebooks
 
-- EDA
-- model training
-- evaluation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

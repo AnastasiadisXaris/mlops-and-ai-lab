@@ -326,7 +326,7 @@ Add notes, examples, and resources as this folder grows.
 
 
 def upgrade_readmes(repo_root: Path, dry_run: bool = False,
-                    target_path: str = None) -> None:
+                    target_path: str = None, max_lines: int = 20) -> None:
     """Find and upgrade all placeholder READMEs."""
 
     if target_path:
@@ -352,7 +352,7 @@ def upgrade_readmes(repo_root: Path, dry_run: bool = False,
         content = readme_path.read_text(encoding="utf-8")
         line_count = len(content.splitlines())
 
-        if line_count > 15:
+        if line_count > max_lines:
             skipped += 1
             continue
 
@@ -374,6 +374,8 @@ def parse_args():
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing")
     parser.add_argument("--path", type=str, default=None,
                         help="Upgrade a single folder (e.g. django/authentication)")
+    parser.add_argument("--max-lines", type=int, default=20,
+                        help="Max lines to consider a placeholder (default: 20)")
     parser.add_argument("--repo-root", type=str, default=".",
                         help="Path to repo root (default: current directory)")
     return parser.parse_args()
@@ -384,4 +386,5 @@ if __name__ == "__main__":
     repo_root = Path(args.repo_root).resolve()
     print(f"Repo root: {repo_root}")
     print(f"Mode: {'DRY RUN' if args.dry_run else 'WRITE'}\n")
-    upgrade_readmes(repo_root, dry_run=args.dry_run, target_path=args.path)
+    upgrade_readmes(repo_root, dry_run=args.dry_run, target_path=args.path,
+                    max_lines=args.max_lines)

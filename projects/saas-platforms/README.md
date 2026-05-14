@@ -1,13 +1,25 @@
-# SaaS Platforms
+# Saas Platforms
 
 ## Purpose
 
-Cloud-native SaaS systems and architectures.
+SaaS platform projects.
 
----
+## What Belongs Here
 
-# Topics
+- multi-tenant apps
+- subscription systems
+- SaaS architectures
 
-- multi-tenancy
-- subscriptions
-- scalability
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

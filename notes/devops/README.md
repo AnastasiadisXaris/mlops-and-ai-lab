@@ -1,14 +1,25 @@
-# DevOps Notes
+# Devops
 
 ## Purpose
 
-Infrastructure engineering and deployment operations.
+DevOps notes.
 
----
+## What Belongs Here
 
-# Topics
+- infrastructure observations
+- tooling comparisons
+- configuration notes
 
-- Docker
-- Kubernetes
-- CI/CD
-- observability
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

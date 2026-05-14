@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Meetings, supervision discussions, and planning notes.
+Meeting and discussion notes.
 
----
+## What Belongs Here
 
-# Examples
+- decisions
+- action items
+- discussion summaries
 
-- thesis meetings
-- project planning
-- architecture reviews
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

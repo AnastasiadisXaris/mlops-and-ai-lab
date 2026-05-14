@@ -1,13 +1,26 @@
-# Django Applications
+# Django Apps
 
 ## Purpose
 
-Backend systems and SaaS applications built with Django.
+Django application projects.
 
----
+## What Belongs Here
 
-# Topics
-
+- SaaS apps
 - APIs
-- dashboards
-- authentication
+- admin panels
+- multi-tenant systems
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

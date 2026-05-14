@@ -1,14 +1,25 @@
-# Paper Notes
+# Papers
 
 ## Purpose
 
-Summaries and annotations of academic papers.
+Paper reading notes.
 
----
+## What Belongs Here
 
-# Structure
+- key takeaways
+- critical assessments
+- connections to own work
 
-- methodology
-- findings
-- critique
-- relevance
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

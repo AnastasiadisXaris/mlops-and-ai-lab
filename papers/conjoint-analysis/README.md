@@ -1,14 +1,26 @@
-# Conjoint Analysis Papers
+# Conjoint Analysis
 
 ## Purpose
 
-Research related to utility estimation and conjoint methodologies.
+Conjoint analysis papers.
 
----
+## What Belongs Here
 
-# Topics
+- Green & Rao
+- Louviere
+- choice modeling literature
+- TBCA-related papers
 
-- CBC
-- ACBC
-- utility theory
-- preference estimation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

@@ -1,16 +1,28 @@
-# Django APIs
+# Api
 
 ## Purpose
 
-REST API architecture using Django REST Framework.
+Django REST API patterns.
 
----
-
-# Topics
+## What Belongs Here
 
 - ViewSets
-- routers
-- serializers
+- Routers
+- Serializers
+- API versioning
 - pagination
 - filtering
-- API versioning
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

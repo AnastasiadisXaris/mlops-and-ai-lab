@@ -1,14 +1,25 @@
-# RAG Systems
+# Rag Systems
 
 ## Purpose
 
-Retrieval-Augmented Generation implementations.
+RAG system projects.
 
----
+## What Belongs Here
 
-# Components
+- document Q&A
+- knowledge bases
+- retrieval pipelines
 
-- retrievers
-- vector DBs
-- embeddings
-- LLM orchestration
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

@@ -1,13 +1,25 @@
-# Research Diagrams
+# Diagrams
 
 ## Purpose
 
-Conceptual and methodological diagrams.
+Paper figures and diagrams.
 
----
+## What Belongs Here
 
-# Examples
+- extracted figures
+- architecture diagrams
+- conceptual models from papers
 
-- PRISMA flows
-- conceptual frameworks
-- architectures
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Reusable operational and backend scripts.
+Django management commands and scripts.
 
----
+## What Belongs Here
 
-# Examples
+- custom manage.py commands
+- data migrations
+- seed scripts
+- cron jobs
 
-- migrations
-- cleanup
-- maintenance
-- exports
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

@@ -1,13 +1,26 @@
-# Project Datasets
+# Datasets
 
 ## Purpose
 
-Datasets used across project implementations.
+Dataset projects.
 
----
+## What Belongs Here
 
-# Include
+- data collection
+- annotation
+- curation
+- synthetic generation
 
-- raw data
-- processed data
-- embeddings
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

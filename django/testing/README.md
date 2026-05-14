@@ -2,13 +2,27 @@
 
 ## Purpose
 
-Backend testing strategy.
+Django testing.
 
----
+## What Belongs Here
 
-# Test Types
+- pytest-django
+- APIClient
+- factory_boy
+- fixtures
+- mock patches
+- coverage
 
-- unit tests
-- integration tests
-- API tests
-- permission tests
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

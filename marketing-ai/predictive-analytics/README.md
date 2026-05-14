@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Predictive models for marketing intelligence.
+Predictive analytics.
 
----
+## What Belongs Here
 
-# Tasks
-
-- conversion prediction
-- forecasting
+- sales forecasting
+- demand prediction
 - customer lifetime value
+- lead scoring
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

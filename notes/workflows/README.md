@@ -1,13 +1,25 @@
-# Workflow Notes
+# Workflows
 
 ## Purpose
 
-Operational and engineering workflows.
+Workflow notes.
 
----
+## What Belongs Here
 
-# Examples
+- process improvements
+- automation ideas
+- operational patterns
 
-- CI/CD workflows
-- ML pipelines
-- RAG workflows
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

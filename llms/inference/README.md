@@ -2,14 +2,26 @@
 
 ## Purpose
 
-LLM serving and runtime inference systems.
+LLM inference optimization.
 
----
+## What Belongs Here
 
-# Topics
-
+- quantization
+- KV cache
+- speculative decoding
 - batching
-- latency
-- throughput
-- GPU optimization
-- token streaming
+- latency profiling
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

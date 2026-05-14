@@ -1,14 +1,28 @@
-# Marketing AI Evaluation
+# Evaluation
 
 ## Purpose
 
-Evaluation methodologies for marketing models.
+Marketing AI evaluation.
 
----
-
-# Metrics
+## What Belongs Here
 
 - CTR
+- conversion rate
+- NDCG
 - Precision@K
-- ROI
-- Recall
+- A/B test significance
+- uplift modeling
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

@@ -2,13 +2,23 @@
 
 ## Purpose
 
-Model and system evaluation workflows.
+Evaluation and benchmarking projects.
 
----
+## What Belongs Here
 
-# Metrics
+- model evaluation frameworks
+- benchmark implementations
 
-- accuracy
-- Precision@K
-- recall
-- latency
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

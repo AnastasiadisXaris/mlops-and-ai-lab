@@ -1,13 +1,25 @@
-# AI Agents
+# Agents
 
 ## Purpose
 
-Agent-based AI systems and autonomous workflows.
+AI agent projects.
 
----
+## What Belongs Here
 
-# Capabilities
+- autonomous agents
+- multi-agent systems
+- tool-use implementations
 
-- planning
-- reasoning
-- automation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

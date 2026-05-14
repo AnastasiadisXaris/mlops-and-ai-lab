@@ -1,13 +1,25 @@
-# Marketing RAG Systems
+# Rag
 
 ## Purpose
 
-Retrieval-Augmented Generation for marketing intelligence.
+RAG for marketing intelligence.
 
----
+## What Belongs Here
 
-# Use Cases
+- knowledge base retrieval
+- campaign insight Q&A
+- product catalog search
 
-- knowledge assistants
-- analytics copilots
-- campaign retrieval
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

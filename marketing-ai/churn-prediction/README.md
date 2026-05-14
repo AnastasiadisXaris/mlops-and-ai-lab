@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Predicting customer attrition and retention risk.
+Customer churn prediction.
 
----
+## What Belongs Here
 
-# Topics
+- survival models
+- gradient boosting
+- early warning systems
+- retention triggers
 
-- retention modeling
-- survival analysis
-- customer lifetime prediction
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

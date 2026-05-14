@@ -1,13 +1,25 @@
-# Personalization Papers
+# Personalization
 
 ## Purpose
 
-Research on adaptive personalization systems.
+Personalization papers.
 
----
+## What Belongs Here
 
-# Topics
+- collaborative filtering
+- content-based filtering
+- hybrid systems
 
-- recommendations
-- adaptive systems
-- user modeling
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

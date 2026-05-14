@@ -2,12 +2,25 @@
 
 ## Purpose
 
-AI-driven campaign performance optimization.
+Campaign optimization AI.
 
----
+## What Belongs Here
 
-# Topics
+- bid optimization
+- audience targeting
+- creative selection
+- budget allocation
 
-- targeting
-- personalization
-- bidding optimization
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

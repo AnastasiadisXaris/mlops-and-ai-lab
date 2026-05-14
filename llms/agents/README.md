@@ -1,15 +1,27 @@
-# AI Agents
+# Agents
 
 ## Purpose
 
-Autonomous and semi-autonomous LLM agent systems.
+AI agent architectures.
 
----
+## What Belongs Here
 
-# Capabilities
+- ReAct agents
+- tool calling
+- agent memory
+- multi-step reasoning
+- agent orchestration
 
-- planning
-- reasoning
-- tool usage
-- orchestration
-- automation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

@@ -1,13 +1,26 @@
-# APIs
+# Apis
 
 ## Purpose
 
-Project APIs and integrations.
+API project implementations.
 
----
-
-# Topics
+## What Belongs Here
 
 - REST APIs
-- GraphQL
-- AI APIs
+- GraphQL APIs
+- FastAPI projects
+- API documentation
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

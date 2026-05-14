@@ -1,15 +1,26 @@
-# Django Architecture
+# Architecture
 
 ## Purpose
 
-Core backend architecture and system organization.
+Django backend architecture.
 
----
+## What Belongs Here
 
-# Topics
-
-- modular monolith
+- project structure
 - service layers
-- scalable backend structure
-- API-first architecture
-- ML integration patterns
+- repository patterns
+- dependency injection
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

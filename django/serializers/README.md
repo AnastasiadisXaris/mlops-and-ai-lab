@@ -2,13 +2,26 @@
 
 ## Purpose
 
-Transform Django models into API-ready representations.
+DRF serializers.
 
----
+## What Belongs Here
 
-# Topics
-
-- validation
+- ModelSerializer
 - nested serializers
+- validation
 - custom fields
-- DRF serializers
+- write methods
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

@@ -1,13 +1,25 @@
-# Deployment Notes
+# Deployments
 
 ## Purpose
 
-Deployment workflows and infrastructure insights.
+Deployment notes.
 
----
+## What Belongs Here
 
-# Topics
+- deployment configurations
+- release notes
+- rollback decisions
 
-- Docker
-- Kubernetes
-- cloud deployment
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

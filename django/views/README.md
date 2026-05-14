@@ -2,13 +2,27 @@
 
 ## Purpose
 
-Application and API request handling.
+Django views.
 
----
+## What Belongs Here
 
-# Topics
-
-- APIViews
+- function-based
+- class-based
 - ViewSets
-- generic views
-- service-layer patterns
+- mixins
+- async views
+- response patterns
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

@@ -1,13 +1,25 @@
-# Deployment Projects
+# Deployment
 
 ## Purpose
 
-Deployment workflows and infrastructure automation.
+Deployment project architectures.
 
----
+## What Belongs Here
 
-# Topics
+- Kubernetes configs
+- Helm charts
+- CI/CD pipelines
 
-- Docker
-- Kubernetes
-- CI/CD
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

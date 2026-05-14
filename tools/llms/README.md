@@ -1,13 +1,27 @@
-# LLM Tools
+# Llms
 
 ## Purpose
 
-Tooling ecosystems for Large Language Models.
+LLM tooling.
 
----
-
-# Examples
+## What Belongs Here
 
 - LangChain
-- CrewAI
+- LlamaIndex
 - Ollama
+- vLLM
+- Hugging Face Transformers
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

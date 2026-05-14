@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Dynamic personalization systems for marketing platforms.
+Personalization engines.
 
----
+## What Belongs Here
 
-# Examples
+- dynamic content
+- product recommendations
+- email personalization
+- next-best-action
 
-- personalized recommendations
-- adaptive content
-- targeted campaigns
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

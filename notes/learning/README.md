@@ -1,13 +1,25 @@
-# Learning Notes
+# Learning
 
 ## Purpose
 
-Condensed learning summaries and educational notes.
+Learning summaries.
 
----
+## What Belongs Here
 
-# Topics
+- course notes
+- book summaries
+- tutorial insights
 
-- concepts
-- frameworks
-- architectures
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

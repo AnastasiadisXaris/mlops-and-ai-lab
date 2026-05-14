@@ -1,14 +1,26 @@
-# LLM Diagrams
+# Diagrams
 
 ## Purpose
 
-Visual architecture diagrams for LLM ecosystems.
+LLM system architecture diagrams.
 
----
+## What Belongs Here
 
-# Examples
+- RAG flows
+- agent loops
+- inference pipelines
+- system designs
 
-- RAG pipelines
-- agent systems
-- inference topology
-- embedding workflows
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

@@ -1,13 +1,25 @@
-# Project Experiments
+# Experiments
 
 ## Purpose
 
-Experimental implementations and benchmarking.
+Experimental projects.
 
----
+## What Belongs Here
 
-# Topics
+- research prototypes
+- hypothesis testing
+- ablation studies
 
-- prompt testing
-- model evaluation
-- retrieval testing
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

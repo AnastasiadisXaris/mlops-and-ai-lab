@@ -1,13 +1,26 @@
-# Marketing AI Papers
+# Marketing Ai
 
 ## Purpose
 
-Research on AI-driven marketing systems.
+Marketing AI papers.
 
----
+## What Belongs Here
 
-# Topics
-
+- recommendation systems
 - personalization
-- segmentation
-- predictive analytics
+- customer analytics
+- ad targeting
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

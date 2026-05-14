@@ -1,13 +1,25 @@
-# Analytics Projects
+# Analytics
 
 ## Purpose
 
-Analytics systems and business intelligence projects.
+Analytics platform projects.
 
----
+## What Belongs Here
 
-# Topics
+- BI dashboards
+- data pipelines
+- reporting systems
 
-- KPI tracking
-- dashboards
-- reporting
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

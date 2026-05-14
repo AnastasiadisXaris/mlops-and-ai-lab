@@ -1,13 +1,26 @@
-# Django CI/CD
+# Ci Cd
 
 ## Purpose
 
-Automated build, test, and deployment pipelines.
+CI/CD for Django projects.
 
----
+## What Belongs Here
 
-# Topics
+- GitHub Actions workflows
+- test automation
+- Docker builds
+- deployment pipelines
 
-- GitHub Actions
-- testing automation
-- deployment workflows
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

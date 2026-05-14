@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Visualization and monitoring dashboards.
+Dashboard projects.
 
----
-
-# Tools
+## What Belongs Here
 
 - Streamlit
 - Grafana
-- Power BI
+- React dashboards
+- real-time monitoring
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

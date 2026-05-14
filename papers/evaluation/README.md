@@ -1,13 +1,26 @@
-# Evaluation Papers
+# Evaluation
 
 ## Purpose
 
-Research on evaluation methodologies and metrics.
+Evaluation methodology papers.
 
----
+## What Belongs Here
 
-# Topics
+- metrics
+- benchmarks
+- evaluation frameworks
+- reproducibility studies
 
-- ML evaluation
-- ranking metrics
-- validation strategies
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

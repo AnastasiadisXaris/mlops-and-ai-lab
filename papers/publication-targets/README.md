@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Target journals, conferences, and publication planning.
+Target journals and venues.
 
----
+## What Belongs Here
 
-# Track
+- journal profiles
+- impact factors
+- submission guidelines
+- deadlines
 
-- scope
-- indexing
-- impact factor
-- formatting requirements
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

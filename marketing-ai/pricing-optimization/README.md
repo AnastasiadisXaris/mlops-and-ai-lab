@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Dynamic pricing and revenue optimization systems.
+Dynamic pricing AI.
 
----
+## What Belongs Here
 
-# Topics
+- price elasticity
+- competitive pricing
+- willingness-to-pay estimation
+- revenue optimization
 
-- elasticity modeling
-- pricing experiments
-- optimization algorithms
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Broad mapping of research domains and emerging fields.
+Scoping review papers.
 
----
+## What Belongs Here
 
-# Topics
+- domain mapping
+- concept identification
+- evidence gap analysis
 
-- PRISMA-ScR
-- conceptual mapping
-- interdisciplinary reviews
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

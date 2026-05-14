@@ -2,12 +2,23 @@
 
 ## Purpose
 
-Reference collections and citation sources.
+Reference collections.
 
----
+## What Belongs Here
 
-# Include
+- curated reading lists
+- topic bibliographies
 
-- DOI references
-- books
-- journals
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

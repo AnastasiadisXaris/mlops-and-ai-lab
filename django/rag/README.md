@@ -1,14 +1,26 @@
-# RAG Systems
+# Rag
 
 ## Purpose
 
-Retrieval-Augmented Generation integration.
+RAG integration with Django.
 
----
+## What Belongs Here
 
-# Components
+- document upload
+- embedding pipeline
+- vector search API
+- LLM response streaming
 
-- vector DB
-- retriever
-- embeddings
-- LLM orchestration
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

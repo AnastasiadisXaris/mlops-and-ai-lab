@@ -1,14 +1,26 @@
-# Marketing APIs
+# Apis
 
 ## Purpose
 
-Marketing platform integrations and APIs.
+Marketing AI API integrations.
 
----
+## What Belongs Here
 
-# Integrations
+- CRM APIs
+- ad platform APIs
+- analytics APIs
+- data ingestion clients
 
-- Google Analytics
-- Meta Ads
-- HubSpot
-- CRM systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

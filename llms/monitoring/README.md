@@ -1,14 +1,27 @@
-# LLM Monitoring
+# Monitoring
 
 ## Purpose
 
-Operational observability for LLM systems.
+LLM monitoring and observability.
 
----
-
-# Monitor
+## What Belongs Here
 
 - latency
 - token usage
-- hallucinations
+- hallucination rate
 - retrieval quality
+- cost dashboards
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

@@ -2,13 +2,24 @@
 
 ## Purpose
 
-Structured evidence synthesis using reproducible methodologies.
+Systematic review papers.
 
----
+## What Belongs Here
 
-# Topics
+- PRISMA protocols
+- evidence synthesis
+- meta-analyses
 
-- PRISMA
-- search strategies
-- inclusion criteria
-- bias assessment
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

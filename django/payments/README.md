@@ -2,13 +2,26 @@
 
 ## Purpose
 
-Billing and payment processing systems.
+Django payments integration.
 
----
-
-# Integrations
+## What Belongs Here
 
 - Stripe
-- PayPal
-- subscriptions
-- invoices
+- webhooks
+- subscription models
+- billing
+- invoice generation
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

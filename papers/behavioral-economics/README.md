@@ -1,13 +1,27 @@
-# Behavioral Economics Papers
+# Behavioral Economics
 
 ## Purpose
 
-Research on behavioral decision-making and cognitive biases.
+Behavioral economics papers.
 
----
+## What Belongs Here
 
-# Topics
+- Kahneman
+- Tversky
+- Thaler — prospect theory
+- bounded rationality
+- nudges
 
-- heuristics
-- biases
-- prospect theory
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

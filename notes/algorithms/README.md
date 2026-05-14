@@ -1,14 +1,26 @@
-# Algorithm Notes
+# Algorithms
 
 ## Purpose
 
-Algorithm explanations and computational reasoning.
+Algorithm notes.
 
----
+## What Belongs Here
 
-# Topics
+- ML algorithms
+- data structures
+- complexity
+- implementation notes
 
-- optimization
-- ranking
-- clustering
-- transformers
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

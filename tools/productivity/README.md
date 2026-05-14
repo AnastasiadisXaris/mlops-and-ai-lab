@@ -1,13 +1,26 @@
-# Productivity Tools
+# Productivity
 
 ## Purpose
 
-Engineering productivity and workflow optimization.
+Productivity tools.
 
----
+## What Belongs Here
 
-# Examples
-
-- VS Code
+- VS Code extensions
 - Obsidian
-- Notion
+- Zotero
+- terminal tools
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

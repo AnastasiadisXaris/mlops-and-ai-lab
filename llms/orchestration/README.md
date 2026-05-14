@@ -1,15 +1,26 @@
-# LLM Orchestration
+# Orchestration
 
 ## Purpose
 
-Workflow coordination for multi-step LLM systems.
+LLM orchestration frameworks.
 
----
-
-# Topics
+## What Belongs Here
 
 - LangChain
+- LlamaIndex
 - CrewAI
-- multi-agent systems
-- pipelines
-- tool coordination
+- Autogen — patterns and comparisons
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

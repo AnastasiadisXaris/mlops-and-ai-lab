@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Step-by-step learning notes and walkthroughs.
+Tutorial notes.
 
----
+## What Belongs Here
 
-# Topics
+- step-by-step guides
+- how-to summaries
+- walkthrough notes
 
-- ML tutorials
-- DevOps walkthroughs
-- AI projects
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

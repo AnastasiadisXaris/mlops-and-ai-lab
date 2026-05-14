@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Request/response processing layers.
+Django custom middleware.
 
----
+## What Belongs Here
 
-# Examples
+- request/response middleware
+- timing middleware
+- auth middleware
+- logging
 
-- authentication middleware
-- logging middleware
-- rate limiting
-- audit tracking
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

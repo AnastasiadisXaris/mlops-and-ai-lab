@@ -1,14 +1,26 @@
-# AI Notes
+# Ai
 
 ## Purpose
 
-General Artificial Intelligence concepts, architectures, and theoretical notes.
+AI engineering notes.
 
----
+## What Belongs Here
 
-# Topics
+- concepts
+- architectures
+- model comparisons
+- research insights
 
-- AI systems
-- intelligent agents
-- neural networks
-- AI reasoning
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

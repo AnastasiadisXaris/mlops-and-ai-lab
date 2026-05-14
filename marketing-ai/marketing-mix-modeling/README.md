@@ -2,12 +2,26 @@
 
 ## Purpose
 
-Optimization and attribution of marketing channels.
+Marketing Mix Modeling (MMM).
 
----
+## What Belongs Here
 
-# Topics
+- channel attribution
+- ROI estimation
+- budget optimization
+- Robyn
+- Meridian
 
-- ROI analysis
-- attribution modeling
-- budget allocation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

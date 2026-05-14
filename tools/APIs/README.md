@@ -1,13 +1,26 @@
-# API Tools
+# Apis
 
 ## Purpose
 
-API development and testing ecosystems.
+API development tools.
 
----
+## What Belongs Here
 
-# Tools
-
-- FastAPI
+- Swagger
 - Postman
-- Insomnia
+- HTTPie
+- API testing frameworks
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

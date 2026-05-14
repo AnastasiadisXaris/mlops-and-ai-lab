@@ -1,13 +1,26 @@
-# Architecture Notes
+# Architectures
 
 ## Purpose
 
-System architecture explanations and design patterns.
+Architecture design notes.
 
----
+## What Belongs Here
 
-# Topics
+- system design decisions
+- trade-offs
+- patterns
+- lessons learned
 
-- microservices
-- AI SaaS
-- recommendation systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

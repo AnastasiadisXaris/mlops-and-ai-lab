@@ -1,13 +1,28 @@
-# Django Admin
+# Admin
 
 ## Purpose
 
-Admin panel customization and operational tooling.
+Django Admin customization.
 
----
+## What Belongs Here
 
-# Topics
-
-- custom dashboards
+- custom ModelAdmin
+- list_display
+- list_filter
+- inline models
 - admin actions
-- moderation tools
+- permissions
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

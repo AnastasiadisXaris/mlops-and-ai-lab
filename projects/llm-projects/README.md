@@ -1,13 +1,26 @@
-# LLM Projects
+# Llm Projects
 
 ## Purpose
 
-Projects built around Large Language Models.
+LLM application projects.
 
----
+## What Belongs Here
 
-# Examples
+- chatbots
+- RAG apps
+- agents
+- fine-tuning projects
 
-- AI copilots
-- RAG assistants
-- semantic search
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

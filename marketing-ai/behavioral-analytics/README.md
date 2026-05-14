@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Analysis of consumer behavior and interaction patterns.
+Behavioral analytics.
 
----
-
-# Topics
+## What Belongs Here
 
 - clickstream analysis
-- browsing behavior
-- engagement modeling
+- session modeling
+- user journey mapping
+- engagement scoring
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

@@ -1,13 +1,27 @@
-# Static Files
+# Static
 
 ## Purpose
 
-Static assets such as CSS, JavaScript, and images.
+Django static files.
 
----
+## What Belongs Here
 
-# Topics
-
-- asset organization
+- STATICFILES_DIRS
+- collectstatic
+- WhiteNoise
 - CDN integration
-- static collection
+- compression
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

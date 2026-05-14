@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Projects directly related to doctoral research.
+Thesis implementation projects.
 
----
+## What Belongs Here
 
-# Topics
+- TBCA prototype
+- conjoint analysis tools
+- NLP pipelines
 
-- preference modeling
-- conjoint analysis
-- ML recommendation systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Narrative and conceptual synthesis of research literature.
+Literature review papers.
 
----
+## What Belongs Here
 
-# Focus
+- systematic reviews
+- scoping reviews
+- narrative reviews
 
-- theory integration
-- conceptual analysis
-- research gaps
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

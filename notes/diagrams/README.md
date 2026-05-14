@@ -1,13 +1,25 @@
-# Diagram Notes
+# Diagrams
 
 ## Purpose
 
-Visual diagrams and architecture sketches.
+Architecture diagram notes.
 
----
+## What Belongs Here
 
-# Examples
+- design sketches
+- system flows
+- whiteboard notes
 
-- Mermaid
-- Draw.io
-- Excalidraw
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

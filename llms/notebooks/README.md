@@ -1,14 +1,26 @@
-# LLM Notebooks
+# Notebooks
 
 ## Purpose
 
-Interactive notebooks for experimentation and prototyping.
+LLM experimentation notebooks.
 
----
+## What Belongs Here
 
-# Topics
+- prompt exploration
+- model comparisons
+- RAG prototypes
+- fine-tuning experiments
 
-- prompting
-- embeddings
-- fine-tuning
-- RAG systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

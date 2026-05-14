@@ -1,13 +1,25 @@
-# Consumer Behavior Papers
+# Consumer Behavior
 
 ## Purpose
 
-Research on consumer decision-making and behavior.
+Consumer behavior research.
 
----
+## What Belongs Here
 
-# Topics
+- purchase decisions
+- behavioral patterns
+- attitude-behavior models
 
-- preferences
-- decision processes
-- behavioral modeling
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

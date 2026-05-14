@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Learning and implementation roadmaps.
+Learning and project roadmaps.
 
----
+## What Belongs Here
 
-# Examples
+- milestones
+- timelines
+- skill progression plans
 
-- MLOps roadmap
-- LLM roadmap
-- AI SaaS roadmap
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

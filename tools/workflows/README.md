@@ -1,13 +1,26 @@
-# Workflow Tools
+# Workflows
 
 ## Purpose
 
-Workflow orchestration and automation systems.
+Workflow tools.
 
----
+## What Belongs Here
 
-# Examples
+- Makefile
+- pre-commit hooks
+- task automation
+- dev workflow tools
 
-- CI/CD workflows
-- AI pipelines
-- ETL systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

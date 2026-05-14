@@ -1,13 +1,26 @@
-# Recommendation Systems Papers
+# Recommendation Systems
 
 ## Purpose
 
-Research on recommendation engines and personalization systems.
+Recommendation system papers.
 
----
+## What Belongs Here
 
-# Topics
+- matrix factorization
+- neural CF
+- session-based
+- knowledge-graph
 
-- collaborative filtering
-- ranking
-- hybrid recommenders
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

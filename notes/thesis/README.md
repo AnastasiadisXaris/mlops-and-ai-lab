@@ -1,13 +1,25 @@
-# Thesis Notes
+# Thesis
 
 ## Purpose
 
-Doctoral dissertation planning and conceptual development.
+Doctoral thesis notes.
 
----
+## What Belongs Here
 
-# Topics
+- research questions
+- methodology decisions
+- supervisor feedback
 
-- utility theory
-- conjoint analysis
-- ML preference modeling
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

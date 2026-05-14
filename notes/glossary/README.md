@@ -2,13 +2,24 @@
 
 ## Purpose
 
-Definitions and terminology reference.
+Terminology glossary.
 
----
+## What Belongs Here
 
-# Examples
+- definitions
+- acronyms
+- domain-specific terms
 
-- embeddings
-- utility theory
-- drift
-- orchestration
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

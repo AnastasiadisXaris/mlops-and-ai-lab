@@ -2,14 +2,25 @@
 
 ## Purpose
 
-Environment-specific configurations.
+Django environment management.
 
----
+## What Belongs Here
 
-# Environments
+- dev/staging/prod settings
+- django-environ
+- .env files
+- secrets management
+
+## Naming Convention
 
 ```text
-development
-staging
-production
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
 ```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

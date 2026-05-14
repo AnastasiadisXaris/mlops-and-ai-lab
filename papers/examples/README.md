@@ -1,13 +1,25 @@
-# Paper Examples
+# Examples
 
 ## Purpose
 
-Reference papers and exemplary publications.
+Paper examples and templates.
 
----
+## What Belongs Here
 
-# Examples
+- writing examples
+- structure templates
+- abstract examples
 
-- high-impact reviews
-- methodological exemplars
-- benchmark studies
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

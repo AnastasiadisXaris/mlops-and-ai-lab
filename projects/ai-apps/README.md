@@ -1,13 +1,25 @@
-# AI Applications
+# Ai Apps
 
 ## Purpose
 
-AI-powered applications and intelligent software systems.
+AI application projects.
 
----
+## What Belongs Here
 
-# Examples
+- full-stack AI apps
+- AI-powered tools
+- intelligent interfaces
 
-- AI assistants
-- personalization systems
-- analytics platforms
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

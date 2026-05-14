@@ -1,13 +1,25 @@
-# Debugging Notes
+# Debugging
 
 ## Purpose
 
-Operational debugging logs and troubleshooting.
+Debugging logs.
 
----
+## What Belongs Here
 
-# Examples
+- root causes
+- solutions
+- lessons learned from production issues
 
-- API failures
-- queue issues
-- deployment bugs
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

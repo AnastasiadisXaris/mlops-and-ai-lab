@@ -1,14 +1,27 @@
-# Fine-Tuning
+# Fine Tuning
 
 ## Purpose
 
-Model adaptation and domain specialization.
+LLM fine-tuning techniques.
 
----
-
-# Methods
+## What Belongs Here
 
 - LoRA
 - QLoRA
+- full fine-tuning
 - instruction tuning
-- supervised fine-tuning
+- dataset preparation
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to llms/](../../README.md)

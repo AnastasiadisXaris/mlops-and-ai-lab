@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Feature creation and transformation pipelines.
+Marketing feature engineering.
 
----
+## What Belongs Here
 
-# Examples
+- RFM features
+- behavioral features
+- text features
+- temporal features
 
-- utility features
-- engagement scores
-- customer embeddings
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

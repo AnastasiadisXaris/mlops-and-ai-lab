@@ -1,13 +1,26 @@
-# ML Models
+# Ml Models
 
 ## Purpose
 
-Machine Learning models for marketing applications.
+Predictive ML models for marketing.
 
----
+## What Belongs Here
 
-# Models
+- classification
+- regression
+- ranking
+- clustering models for marketing tasks
 
-- XGBoost
-- Random Forest
-- Neural Networks
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

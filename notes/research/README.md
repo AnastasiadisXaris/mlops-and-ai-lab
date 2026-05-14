@@ -1,13 +1,25 @@
-# Research Notes
+# Research
 
 ## Purpose
 
-Academic research insights and methodological notes.
+Research notes.
 
----
+## What Belongs Here
 
-# Topics
+- thesis insights
+- theoretical connections
+- open questions
 
-- methodologies
-- literature reviews
-- evaluation
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

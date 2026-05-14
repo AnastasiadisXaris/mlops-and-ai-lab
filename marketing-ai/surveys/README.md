@@ -2,12 +2,25 @@
 
 ## Purpose
 
-Survey workflows and preference data collection.
+Survey design and analysis.
 
----
-
-# Topics
+## What Belongs Here
 
 - conjoint surveys
-- Likert scales
-- experimental design
+- NPS
+- satisfaction surveys
+- response bias correction
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to marketing-ai/](../../README.md)

@@ -1,13 +1,26 @@
-# Embedding Tools
+# Embeddings
 
 ## Purpose
 
-Embedding generation and vector representation tooling.
+Embedding tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - Sentence Transformers
-- OpenAI Embeddings
-- Instructor Models
+- OpenAI embeddings
+- MTEB
+- embedding evaluators
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

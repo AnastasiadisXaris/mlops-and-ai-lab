@@ -1,13 +1,27 @@
-# Deployment Tools
+# Deployment
 
 ## Purpose
 
-Deployment automation and infrastructure tooling.
+Deployment tools.
 
----
+## What Belongs Here
 
-# Examples
-
-- Helm
 - ArgoCD
-- GitHub Actions
+- FluxCD
+- Helm
+- Skaffold
+- deployment automation
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

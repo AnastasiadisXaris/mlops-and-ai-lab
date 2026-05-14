@@ -1,13 +1,25 @@
-# Framework Papers
+# Frameworks
 
 ## Purpose
 
-Conceptual and theoretical frameworks.
+Theoretical frameworks.
 
----
-
-# Topics
+## What Belongs Here
 
 - conceptual models
-- AI frameworks
-- analytical frameworks
+- theoretical contributions
+- framework papers
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)

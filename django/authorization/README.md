@@ -2,13 +2,25 @@
 
 ## Purpose
 
-Permissions and access control.
+Django authorization and permissions.
 
----
-
-# Topics
+## What Belongs Here
 
 - RBAC
-- object permissions
-- API permissions
-- role isolation
+- object-level permissions
+- custom Permission classes
+- groups
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to django/](../../README.md)

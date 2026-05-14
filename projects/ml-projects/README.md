@@ -1,13 +1,24 @@
-# ML Projects
+# Ml Projects
 
 ## Purpose
 
-Machine Learning implementations and predictive systems.
+ML project implementations.
 
----
+## What Belongs Here
 
-# Topics
+- end-to-end ML pipelines
+- model training projects
 
-- classification
-- regression
-- recommendation systems
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to projects/](../../README.md)

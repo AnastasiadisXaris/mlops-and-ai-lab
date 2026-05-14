@@ -1,14 +1,25 @@
-# Django Notes
+# Django
 
 ## Purpose
 
-Backend engineering and Django architecture notes.
+Django engineering notes.
 
----
+## What Belongs Here
 
-# Topics
+- patterns discovered
+- performance observations
+- gotchas
 
-- DRF
-- authentication
-- ORM
-- deployment
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to notes/](../../README.md)

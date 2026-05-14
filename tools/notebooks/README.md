@@ -1,13 +1,27 @@
-# Notebook Tools
+# Notebooks
 
 ## Purpose
 
-Interactive notebook environments.
+Notebook tools.
 
----
-
-# Tools
+## What Belongs Here
 
 - Jupyter
-- Colab
-- VS Code Notebooks
+- VS Code notebooks
+- nbconvert
+- Papermill
+- Quarto
+
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to tools/](../../README.md)

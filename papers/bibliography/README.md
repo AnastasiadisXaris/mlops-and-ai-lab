@@ -2,12 +2,24 @@
 
 ## Purpose
 
-Master bibliography collections and reference management.
+Bibliography management.
 
----
+## What Belongs Here
 
-# Recommended Tools
+- BibTeX entries
+- citation collections
+- reference databases
 
-- Zotero
-- JabRef
-- BibTeX
+## Naming Convention
+
+```text
+<description>-<version>.<ext>
+# or
+<type>-<description>.md
+```
+
+## Notes
+
+Add notes, examples, and resources as this folder grows.
+
+→ [Back to papers/](../../README.md)
