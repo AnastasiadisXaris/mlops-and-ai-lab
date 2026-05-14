@@ -1,37 +1,19 @@
-# RAG Pipeline — Example
+# LLM Examples
 
-Realistic end-to-end RAG (Retrieval-Augmented Generation) implementation using Sentence Transformers, FAISS, and a pluggable LLM backend.
+Realistic, runnable LLM examples demonstrating production patterns for RAG systems, agents, and LLM application development.
 
-## Pipeline
+Each example is self-contained with its own `requirements.txt`, tests, and README.
 
-```text
-Documents
-    ↓
-Chunking (overlapping windows)
-    ↓
-Embeddings (Sentence Transformers)
-    ↓
-FAISS Index (cosine similarity)
-    ↓
-Query → Top-K Retrieval
-    ↓
-Context Assembly
-    ↓
-LLM Response (Anthropic / OpenAI / stub)
-```
+---
 
-## What It Demonstrates
+## Examples
 
-- document chunking with configurable size and overlap
-- embedding generation with `all-MiniLM-L6-v2`
-- FAISS `IndexFlatIP` for cosine similarity search
-- pluggable LLM backends (Anthropic, OpenAI, stub)
-- structured retrieval results with scores and source attribution
-- clean separation of retrieval and generation
+### [rag/](./rag/) — RAG Pipeline
 
-## Usage
+End-to-end Retrieval-Augmented Generation pipeline using Sentence Transformers, FAISS, and a pluggable LLM backend (Anthropic, OpenAI, or stub).
 
 ```bash
+cd llms/examples/rag
 pip install -r requirements.txt
 
 # Run with stub LLM (no API key needed)
@@ -40,40 +22,28 @@ python rag_pipeline.py
 # Run with Anthropic
 ANTHROPIC_API_KEY=sk-... python rag_pipeline.py --llm anthropic
 
-# Run with OpenAI
-OPENAI_API_KEY=sk-... python rag_pipeline.py --llm openai
-
-# Adjust top-k retrieval
-python rag_pipeline.py --top-k 5
-```
-
-## Example Output
-
-```
-==================================================================
-  RAG PIPELINE DEMO
-==================================================================
-
-❓ What is MLOps and what are its key components?
-📄 Sources: ['mlops-overview', 'rag-systems', 'drift-detection']
-🔢 Scores:  [0.6821, 0.5234, 0.4812]
-
-💬 Response:
-MLOps combines Machine Learning, DevOps, and Data Engineering
-to streamline deployment and maintenance of ML models...
-------------------------------------------------------------------
-```
-
-## Run Tests
-
-```bash
+# Run tests
 pytest test_rag_pipeline.py -v
 ```
 
-## Key Design Decisions
+**Demonstrates:** document chunking · Sentence Transformers embeddings · FAISS index · top-k retrieval · pluggable LLM backends · source attribution · stub LLM for CI/CD
 
-- **FAISS `IndexFlatIP`** — exact search on normalized vectors = cosine similarity, no approximation
-- **Overlapping chunks** — 50-char overlap prevents context loss at boundaries
-- **Stub LLM** — runs without any API key for testing and CI/CD
-- **Source attribution** — every response includes source doc IDs and retrieval scores
-- **Pluggable backends** — swap LLM provider without changing retrieval logic
+---
+
+## How LLM Examples Connect to MLOps Examples
+
+```text
+mlops/examples/tracking/   →  model trained and tracked
+mlops/examples/serving/    →  model served via FastAPI
+llms/examples/rag/         →  knowledge base retrieval + LLM grounding
+```
+
+RAG can be combined with the MLOps serving layer: Django or FastAPI routes a user query to the RAG pipeline, retrieves relevant context, and calls the LLM — all observable via the Prometheus + Grafana stack in `devops/docker/`.
+
+---
+
+## Requirements
+
+| Example | Key Dependencies |
+|---|---|
+| rag | `sentence-transformers` · `faiss-cpu` · `anthropic` · `openai` |
