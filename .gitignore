@@ -216,3 +216,79 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ─────────────────────────────────────────
+# MLOps
+# ─────────────────────────────────────────
+
+# MLflow
+mlruns/
+mlflow.db
+mlflow-artifacts/
+
+# DVC
+.dvc/tmp/
+.dvc/cache/
+*.dvc.lock
+
+# Model artifacts
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.bin
+*.h5
+
+# ─────────────────────────────────────────
+# Datasets
+# ─────────────────────────────────────────
+
+# Large data files
+*.parquet
+*.csv
+*.tsv
+*.jsonl
+*.feather
+*.arrow
+
+# Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+
+# Private datasets (always exclude)
+datasets/private/**
+!datasets/private/**/README.md
+!datasets/private/**/*.json
+
+# ─────────────────────────────────────────
+# Docker & Infrastructure
+# ─────────────────────────────────────────
+
+# Docker volumes (local dev)
+postgres-data/
+redis-data/
+grafana-data/
+prometheus-data/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# ─────────────────────────────────────────
+# Notebooks
+# ─────────────────────────────────────────
+
+# Notebook outputs (keep notebooks, strip outputs before commit)
+*.ipynb_checkpoints/
+
+# ─────────────────────────────────────────
+# Secrets & Credentials
+# ─────────────────────────────────────────
+*.pem
+*.key
+*.crt
+secrets/
+credentials/
