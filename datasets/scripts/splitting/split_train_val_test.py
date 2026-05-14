@@ -26,31 +26,36 @@ from pathlib import Path
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
 log = logging.getLogger(__name__)
 
 
-def stratified_split(df: pd.DataFrame, target: str,
-                     train_ratio: float, val_ratio: float,
-                     seed: int) -> tuple:
+def stratified_split(
+    df: pd.DataFrame, target: str, train_ratio: float, val_ratio: float, seed: int
+) -> tuple:
     test_ratio = round(1 - train_ratio - val_ratio, 4)
     train, temp = train_test_split(
         df, test_size=(val_ratio + test_ratio), random_state=seed, stratify=df[target]
     )
     val, test = train_test_split(
-        temp, test_size=(test_ratio / (val_ratio + test_ratio)),
-        random_state=seed, stratify=temp[target]
+        temp,
+        test_size=(test_ratio / (val_ratio + test_ratio)),
+        random_state=seed,
+        stratify=temp[target],
     )
     return train, val, test
 
 
-def temporal_split(df: pd.DataFrame, timestamp_col: str,
-                   train_ratio: float, val_ratio: float) -> tuple:
+def temporal_split(
+    df: pd.DataFrame, timestamp_col: str, train_ratio: float, val_ratio: float
+) -> tuple:
     df = df.sort_values(timestamp_col).reset_index(drop=True)
     n = len(df)
-    train = df.iloc[:int(n * train_ratio)]
-    val   = df.iloc[int(n * train_ratio):int(n * (train_ratio + val_ratio))]
-    test  = df.iloc[int(n * (train_ratio + val_ratio)):]
+    train = df.iloc[: int(n * train_ratio)]
+    val = df.iloc[int(n * train_ratio) : int(n * (train_ratio + val_ratio))]
+    test = df.iloc[int(n * (train_ratio + val_ratio)) :]
     return train, val, test
 
 
@@ -65,17 +70,26 @@ def save_splits(train, val, test, output_dir: str, stem: str) -> None:
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Split dataset into train/val/test.")
-    parser.add_argument("--input",         required=True)
-    parser.add_argument("--output-dir",    type=str, default="datasets/processed/splits")
-    parser.add_argument("--strategy",      choices=["stratified", "temporal"],
-                        default="stratified")
-    parser.add_argument("--target",        type=str, default="purchase_intent",
-                        help="Target column (stratified only)")
-    parser.add_argument("--timestamp-col", type=str, default="timestamp",
-                        help="Timestamp column (temporal only)")
-    parser.add_argument("--train-ratio",   type=float, default=0.70)
-    parser.add_argument("--val-ratio",     type=float, default=0.15)
-    parser.add_argument("--seed",          type=int,   default=42)
+    parser.add_argument("--input", required=True)
+    parser.add_argument("--output-dir", type=str, default="datasets/processed/splits")
+    parser.add_argument(
+        "--strategy", choices=["stratified", "temporal"], default="stratified"
+    )
+    parser.add_argument(
+        "--target",
+        type=str,
+        default="purchase_intent",
+        help="Target column (stratified only)",
+    )
+    parser.add_argument(
+        "--timestamp-col",
+        type=str,
+        default="timestamp",
+        help="Timestamp column (temporal only)",
+    )
+    parser.add_argument("--train-ratio", type=float, default=0.70)
+    parser.add_argument("--val-ratio", type=float, default=0.15)
+    parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
 
 
@@ -83,7 +97,7 @@ if __name__ == "__main__":
     args = parse_args()
 
     log.info(f"Loading: {args.input}")
-    df   = pd.read_parquet(args.input)
+    df = pd.read_parquet(args.input)
     stem = Path(args.input).stem.replace("-v1", "").replace("-cleaned", "")
 
     log.info(f"Shape: {df.shape} | Strategy: {args.strategy}")

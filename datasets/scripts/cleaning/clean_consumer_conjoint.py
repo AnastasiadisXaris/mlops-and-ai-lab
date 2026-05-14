@@ -22,10 +22,12 @@ from pathlib import Path
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
 log = logging.getLogger(__name__)
 
-DEFAULT_INPUT  = "datasets/raw/surveys/consumer-conjoint-raw.csv"
+DEFAULT_INPUT = "datasets/raw/surveys/consumer-conjoint-raw.csv"
 DEFAULT_OUTPUT = "datasets/processed/marketing/consumer-conjoint-cleaned-v1.parquet"
 SYNTHETIC_PATH = "datasets/synthetic/marketing/marketing-synthetic-conjoint-v1.parquet"
 
@@ -55,9 +57,9 @@ def clean(df: pd.DataFrame) -> pd.DataFrame:
     # 3. Filter valid ranges
     before = len(df)
     df = df[
-        df["price_level"].between(1, 5) &
-        df["quality"].between(1, 5) &
-        df["delivery_days"].between(1, 7)
+        df["price_level"].between(1, 5)
+        & df["quality"].between(1, 5)
+        & df["delivery_days"].between(1, 7)
     ]
     log.info(f"Removed {before - len(df)} rows outside valid attribute ranges")
 
@@ -90,15 +92,18 @@ def save(df: pd.DataFrame, output_path: str) -> None:
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Clean conjoint survey data.")
-    parser.add_argument("--input",         type=str, default=DEFAULT_INPUT)
-    parser.add_argument("--output",        type=str, default=DEFAULT_OUTPUT)
-    parser.add_argument("--use-synthetic", action="store_true",
-                        help="Use synthetic data instead of raw CSV")
+    parser.add_argument("--input", type=str, default=DEFAULT_INPUT)
+    parser.add_argument("--output", type=str, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--use-synthetic",
+        action="store_true",
+        help="Use synthetic data instead of raw CSV",
+    )
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
-    df   = load(args.input, args.use_synthetic)
-    df   = clean(df)
+    df = load(args.input, args.use_synthetic)
+    df = clean(df)
     save(df, args.output)

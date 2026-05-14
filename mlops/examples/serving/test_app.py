@@ -29,10 +29,12 @@ N = serving_app.N_FEATURES
 def mock_model():
     """Inject a locally trained mock model — no MLflow needed."""
     X, y = make_classification(n_samples=300, n_features=N, random_state=42)
-    pipeline = Pipeline([
-        ("scaler", StandardScaler()),
-        ("clf", RandomForestClassifier(n_estimators=10, random_state=42)),
-    ])
+    pipeline = Pipeline(
+        [
+            ("scaler", StandardScaler()),
+            ("clf", RandomForestClassifier(n_estimators=10, random_state=42)),
+        ]
+    )
     pipeline.fit(X, y)
     serving_app.model_store["model"] = pipeline
     serving_app.model_store["model_uri"] = "mock://local"

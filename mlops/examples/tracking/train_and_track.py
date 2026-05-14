@@ -18,25 +18,23 @@ Usage:
     MLFLOW_TRACKING_URI=http://localhost:5000 python train_and_track.py
 """
 
-import os
 import logging
+import os
 
 import mlflow
 import mlflow.sklearn
 import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.metrics import (
-    accuracy_score,
-    f1_score,
-    roc_auc_score,
-    classification_report,
-)
-from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import (accuracy_score, classification_report, f1_score,
+                             roc_auc_score)
+from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
 log = logging.getLogger(__name__)
 
 # --- Config ---
@@ -62,10 +60,12 @@ def load_data():
 
 def build_pipeline(params: dict) -> Pipeline:
     """Build a sklearn Pipeline: scaler + classifier."""
-    return Pipeline([
-        ("scaler", StandardScaler()),
-        ("clf", RandomForestClassifier(**params, random_state=RANDOM_STATE)),
-    ])
+    return Pipeline(
+        [
+            ("scaler", StandardScaler()),
+            ("clf", RandomForestClassifier(**params, random_state=RANDOM_STATE)),
+        ]
+    )
 
 
 def evaluate(model, X_test, y_test) -> dict:
@@ -97,12 +97,14 @@ def run_experiment():
     with mlflow.start_run(run_name="rf-baseline") as run:
 
         # --- Tags ---
-        mlflow.set_tags({
-            "model_type": "RandomForest",
-            "dataset": "synthetic-classification",
-            "stage": "baseline",
-            "author": "mlops-lab",
-        })
+        mlflow.set_tags(
+            {
+                "model_type": "RandomForest",
+                "dataset": "synthetic-classification",
+                "stage": "baseline",
+                "author": "mlops-lab",
+            }
+        )
 
         # --- Train ---
         log.info("Training model...")

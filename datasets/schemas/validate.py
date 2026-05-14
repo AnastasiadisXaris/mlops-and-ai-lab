@@ -17,13 +17,15 @@ import pandas as pd
 import pandera as pa
 from pandera import Check, Column, DataFrameSchema
 
-logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s"
+)
 log = logging.getLogger(__name__)
 
 TYPE_MAP = {
-    "string":  str,
+    "string": str,
     "integer": int,
-    "float":   float,
+    "float": float,
     "boolean": bool,
 }
 
@@ -32,9 +34,9 @@ def build_pandera_schema(schema_def: dict) -> DataFrameSchema:
     """Build a Pandera DataFrameSchema from a JSON schema definition."""
     columns = {}
     for col in schema_def["columns"]:
-        dtype    = TYPE_MAP.get(col["type"], object)
+        dtype = TYPE_MAP.get(col["type"], object)
         nullable = col.get("nullable", True)
-        c        = col.get("constraints", {})
+        c = col.get("constraints", {})
 
         checks = []
         if c.get("min") is not None:
@@ -62,7 +64,9 @@ def validate(data_path: str, schema_path: str) -> bool:
     with open(schema_path) as f:
         schema_def = json.load(f)
 
-    log.info(f"Validating against schema: {schema_def['name']} v{schema_def['version']}")
+    log.info(
+        f"Validating against schema: {schema_def['name']} v{schema_def['version']}"
+    )
 
     # Build and validate
     schema = build_pandera_schema(schema_def)
@@ -77,8 +81,10 @@ def validate(data_path: str, schema_path: str) -> bool:
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Validate a dataset against a JSON schema.")
-    parser.add_argument("--data",   required=True, help="Path to parquet dataset")
+    parser = argparse.ArgumentParser(
+        description="Validate a dataset against a JSON schema."
+    )
+    parser.add_argument("--data", required=True, help="Path to parquet dataset")
     parser.add_argument("--schema", required=True, help="Path to JSON schema file")
     return parser.parse_args()
 

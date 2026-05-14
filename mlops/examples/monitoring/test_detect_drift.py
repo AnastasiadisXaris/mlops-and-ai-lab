@@ -15,17 +15,11 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from mlops.examples.monitoring.detect_drift import (
-    compute_psi,
-    run_cusum,
-    run_ks,
-    run_psi,
-    generate_data,
-    run,
-    PSI_THRESHOLDS,
-    KS_ALPHA,
-    CUSUM_THRESHOLD,
-)
+from mlops.examples.monitoring.detect_drift import (CUSUM_THRESHOLD, KS_ALPHA,
+                                                    PSI_THRESHOLDS,
+                                                    compute_psi, generate_data,
+                                                    run, run_cusum, run_ks,
+                                                    run_psi)
 
 
 # ─── PSI ───
@@ -37,14 +31,15 @@ def test_psi_identical_distributions():
 
 def test_psi_detects_large_shift():
     reference = np.random.normal(0, 1, 1000)
-    current   = np.random.normal(5, 1, 1000)  # large shift
+    current = np.random.normal(5, 1, 1000)  # large shift
     psi = compute_psi(reference, current)
     assert psi >= PSI_THRESHOLDS["warning"], f"Expected PSI >= 0.20, got {psi}"
 
 
 def test_run_psi_returns_results_per_feature():
-    df = pd.DataFrame({"f1": np.random.normal(0, 1, 500),
-                        "f2": np.random.normal(0, 1, 500)})
+    df = pd.DataFrame(
+        {"f1": np.random.normal(0, 1, 500), "f2": np.random.normal(0, 1, 500)}
+    )
     results = run_psi(df, df, ["f1", "f2"])
     assert len(results) == 2
     assert all(r.method == "PSI" for r in results)
@@ -53,8 +48,8 @@ def test_run_psi_returns_results_per_feature():
 
 def test_run_psi_flags_drift():
     reference = pd.DataFrame({"f1": np.random.normal(0, 1, 1000)})
-    current   = pd.DataFrame({"f1": np.random.normal(5, 1, 1000)})
-    results   = run_psi(reference, current, ["f1"])
+    current = pd.DataFrame({"f1": np.random.normal(5, 1, 1000)})
+    results = run_psi(reference, current, ["f1"])
     assert results[0].drifted
 
 
@@ -68,8 +63,8 @@ def test_ks_same_distribution_no_drift():
 
 def test_ks_different_distribution_drift():
     reference = pd.DataFrame({"f1": np.random.normal(0, 1, 1000)})
-    current   = pd.DataFrame({"f1": np.random.normal(4, 1, 1000)})
-    results   = run_ks(reference, current, ["f1"])
+    current = pd.DataFrame({"f1": np.random.normal(4, 1, 1000)})
+    results = run_ks(reference, current, ["f1"])
     assert results[0].drifted
     assert results[0].details["p_value"] < KS_ALPHA
 
@@ -82,10 +77,9 @@ def test_cusum_stable_performance():
 
 
 def test_cusum_detects_degradation():
-    degraded = (
-        list(np.random.normal(0.90, 0.005, 10)) +
-        list(np.random.normal(0.65, 0.01, 20))   # big drop
-    )
+    degraded = list(np.random.normal(0.90, 0.005, 10)) + list(
+        np.random.normal(0.65, 0.01, 20)
+    )  # big drop
     result = run_cusum(degraded, target=0.85, threshold=CUSUM_THRESHOLD)
     assert result.drifted
     assert result.details["alert_at_step"] is not None

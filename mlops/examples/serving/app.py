@@ -79,7 +79,25 @@ class PredictRequest(BaseModel):
     features: List[float] = Field(
         ...,
         description=f"Feature vector of length {N_FEATURES}",
-        examples=[[0.1, -0.5, 1.2, 0.3, -1.1, 0.8, 0.0, -0.2, 0.6, 1.0, 0.4, -0.7, 0.9, -0.3, 0.5]],
+        examples=[
+            [
+                0.1,
+                -0.5,
+                1.2,
+                0.3,
+                -1.1,
+                0.8,
+                0.0,
+                -0.2,
+                0.6,
+                1.0,
+                0.4,
+                -0.7,
+                0.9,
+                -0.3,
+                0.5,
+            ]
+        ],
     )
 
     @field_validator("features")
@@ -100,7 +118,9 @@ class BatchPredictRequest(BaseModel):
     def check_instances(cls, v):
         for i, row in enumerate(v):
             if len(row) != N_FEATURES:
-                raise ValueError(f"Instance {i}: expected {N_FEATURES} features, got {len(row)}")
+                raise ValueError(
+                    f"Instance {i}: expected {N_FEATURES} features, got {len(row)}"
+                )
         return v
 
 
@@ -148,7 +168,9 @@ def predict(request: PredictRequest):
     probability = float(model_store["model"].predict_proba(X)[0][prediction])
     elapsed_ms = round((time.perf_counter() - start) * 1000, 2)
 
-    log.info(f"predict | class={prediction} prob={probability:.4f} latency={elapsed_ms}ms")
+    log.info(
+        f"predict | class={prediction} prob={probability:.4f} latency={elapsed_ms}ms"
+    )
 
     return PredictResponse(
         prediction=prediction,
@@ -167,7 +189,7 @@ def predict_batch(request: BatchPredictRequest):
     X = np.array(request.instances)
     predictions = model_store["model"].predict(X).tolist()
     probabilities = [
-        round(float(model_store["model"].predict_proba(X[i:i+1])[0][pred]), 4)
+        round(float(model_store["model"].predict_proba(X[i : i + 1])[0][pred]), 4)
         for i, pred in enumerate(predictions)
     ]
     elapsed_ms = round((time.perf_counter() - start) * 1000, 2)
