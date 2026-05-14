@@ -1,0 +1,82 @@
+{
+  "name": "consumer-conjoint-survey",
+  "version": "1.0",
+  "description": "Consumer conjoint analysis survey for preference modeling and utility estimation.",
+  "created_at": "2026-01-15",
+  "updated_at": "2026-01-15",
+  "columns": [
+    {
+      "name": "respondent_id",
+      "type": "string",
+      "nullable": false,
+      "description": "Unique respondent identifier.",
+      "constraints": { "regex": "^R[0-9]{4}$" },
+      "example": "R0042"
+    },
+    {
+      "name": "task_id",
+      "type": "integer",
+      "nullable": false,
+      "description": "Choice task number shown to respondent.",
+      "constraints": { "min": 1, "max": 8 },
+      "example": 3
+    },
+    {
+      "name": "profile_id",
+      "type": "integer",
+      "nullable": false,
+      "description": "Product profile shown within the task.",
+      "constraints": { "min": 1, "max": 3 },
+      "example": 2
+    },
+    {
+      "name": "price_level",
+      "type": "integer",
+      "nullable": false,
+      "description": "Price attribute on a 1–5 Likert scale.",
+      "constraints": { "min": 1, "max": 5 },
+      "example": 3
+    },
+    {
+      "name": "brand",
+      "type": "string",
+      "nullable": false,
+      "description": "Product brand shown in the choice task.",
+      "constraints": { "allowed_values": ["BrandA", "BrandB", "BrandC"] },
+      "example": "BrandA"
+    },
+    {
+      "name": "quality",
+      "type": "integer",
+      "nullable": false,
+      "description": "Quality attribute on a 1–5 Likert scale.",
+      "constraints": { "min": 1, "max": 5 },
+      "example": 4
+    },
+    {
+      "name": "delivery_days",
+      "type": "integer",
+      "nullable": false,
+      "description": "Delivery time in days.",
+      "constraints": { "min": 1, "max": 7 },
+      "example": 2
+    },
+    {
+      "name": "utility_score",
+      "type": "float",
+      "nullable": true,
+      "description": "Estimated part-worth utility, normalized to [0, 1].",
+      "constraints": { "min": 0.0, "max": 1.0 },
+      "example": 0.73
+    },
+    {
+      "name": "purchase_intent",
+      "type": "integer",
+      "nullable": false,
+      "description": "Binary purchase intention label.",
+      "constraints": { "allowed_values": [0, 1] },
+      "example": 1
+    }
+  ],
+  "primary_key": "respondent_id"
+}
