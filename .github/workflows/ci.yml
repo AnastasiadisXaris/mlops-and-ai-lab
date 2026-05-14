@@ -1,0 +1,168 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  # ─────────────────────────────────────────
+  # Lint
+  # ─────────────────────────────────────────
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install linting tools
+        run: pip install flake8 black isort
+
+      - name: black
+        run: black --check --diff mlops/ llms/ datasets/
+
+      - name: isort
+        run: isort --check-only --diff mlops/ llms/ datasets/
+
+      - name: flake8
+        run: flake8 mlops/ llms/ datasets/ --max-line-length=100 --extend-ignore=E203,W503
+
+  # ─────────────────────────────────────────
+  # Test — MLOps examples
+  # ─────────────────────────────────────────
+  test-mlops:
+    name: Test MLOps Examples
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-mlops-${{ hashFiles('mlops/examples/serving/requirements.txt', 'mlops/examples/monitoring/requirements.txt') }}
+
+      - name: Install serving dependencies
+        run: pip install -r mlops/examples/serving/requirements.txt
+
+      - name: Test inference API
+        run: |
+          cd mlops/examples/serving
+          python -m pytest test_app.py -v --tb=short
+
+      - name: Install monitoring dependencies
+        run: pip install -r mlops/examples/monitoring/requirements.txt
+
+      - name: Test drift detection
+        run: |
+          cd mlops/examples/monitoring
+          python -m pytest test_detect_drift.py -v --tb=short
+
+  # ─────────────────────────────────────────
+  # Test — LLM examples
+  # ─────────────────────────────────────────
+  test-llms:
+    name: Test LLM Examples
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-llms-${{ hashFiles('llms/examples/rag/requirements.txt') }}
+
+      - name: Install RAG dependencies
+        run: pip install -r llms/examples/rag/requirements.txt
+
+      - name: Test RAG pipeline
+        run: |
+          cd llms/examples/rag
+          python -m pytest test_rag_pipeline.py -v --tb=short
+
+  # ─────────────────────────────────────────
+  # Validate datasets scripts
+  # ─────────────────────────────────────────
+  test-datasets:
+    name: Test Dataset Scripts
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas scikit-learn numpy pandera pyarrow
+
+      - name: Generate synthetic datasets
+        run: python datasets/synthetic/generate_synthetic.py
+
+      - name: Validate schema
+        run: |
+          python datasets/schemas/validate.py \
+            --data datasets/synthetic/marketing/marketing-synthetic-conjoint-v1.parquet \
+            --schema datasets/schemas/consumer-conjoint-schema-v1.json
+
+      - name: Run cleaning script
+        run: |
+          python datasets/scripts/cleaning/clean_consumer_conjoint.py \
+            --use-synthetic
+
+      - name: Run split script
+        run: |
+          python datasets/scripts/splitting/split_train_val_test.py \
+            --input datasets/processed/marketing/consumer-conjoint-cleaned-v1.parquet \
+            --strategy stratified
+
+  # ─────────────────────────────────────────
+  # Docker build validation
+  # ─────────────────────────────────────────
+  docker-build:
+    name: Docker Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build inference API image
+        run: |
+          docker build \
+            -f devops/docker/Dockerfile.api \
+            -t mlops-api:ci \
+            .
+
+      - name: Smoke test — container starts
+        run: |
+          docker run -d --name mlops-api-test \
+            -e MLFLOW_TRACKING_URI=sqlite:///mlflow.db \
+            -p 8000:8000 \
+            mlops-api:ci
+          sleep 5
+          curl --fail http://localhost:8000/health || (docker logs mlops-api-test && exit 1)
+          docker stop mlops-api-test
+          docker rm mlops-api-test
