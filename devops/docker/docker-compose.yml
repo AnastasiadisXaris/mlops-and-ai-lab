@@ -1,0 +1,162 @@
+services:
+
+  # ─────────────────────────────────────────
+  # ML Inference API (FastAPI)
+  # ─────────────────────────────────────────
+  api:
+    build:
+      context: ../../
+      dockerfile: devops/docker/Dockerfile.api
+    container_name: mlops-api
+    ports:
+      - "8000:8000"
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - MODEL_NAME=production-classifier
+      - MODEL_STAGE=Staging
+      - DATABASE_URL=postgresql://mlops:mlops@postgres:5432/mlops
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      mlflow:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - mlops-net
+
+  # ─────────────────────────────────────────
+  # MLflow Tracking Server
+  # ─────────────────────────────────────────
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.13.0
+    container_name: mlops-mlflow
+    ports:
+      - "5000:5000"
+    command: >
+      mlflow server
+      --host 0.0.0.0
+      --port 5000
+      --backend-store-uri postgresql://mlops:mlops@postgres:5432/mlflow
+      --default-artifact-root /mlflow/artifacts
+    volumes:
+      - mlflow_artifacts:/mlflow/artifacts
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+    networks:
+      - mlops-net
+
+  # ─────────────────────────────────────────
+  # PostgreSQL
+  # ─────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: mlops-postgres
+    environment:
+      POSTGRES_USER: mlops
+      POSTGRES_PASSWORD: mlops
+      POSTGRES_MULTIPLE_DATABASES: mlops,mlflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init/postgres-init.sh:/docker-entrypoint-initdb.d/init.sh
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mlops"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - mlops-net
+
+  # ─────────────────────────────────────────
+  # Redis — Cache + Task Queue
+  # ─────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: mlops-redis
+    ports:
+      - "6379:6379"
+    command: redis-server --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - mlops-net
+
+  # ─────────────────────────────────────────
+  # Prometheus — Metrics Collection
+  # ─────────────────────────────────────────
+  prometheus:
+    image: prom/prometheus:v2.51.0
+    container_name: mlops-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--storage.tsdb.retention.time=15d"
+    restart: unless-stopped
+    networks:
+      - mlops-net
+
+  # ─────────────────────────────────────────
+  # Grafana — Dashboards
+  # ─────────────────────────────────────────
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: mlops-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+    networks:
+      - mlops-net
+
+# ─────────────────────────────────────────
+# Volumes
+# ─────────────────────────────────────────
+volumes:
+  postgres_data:
+  redis_data:
+  mlflow_artifacts:
+  prometheus_data:
+  grafana_data:
+
+# ─────────────────────────────────────────
+# Networks
+# ─────────────────────────────────────────
+networks:
+  mlops-net:
+    driver: bridge
