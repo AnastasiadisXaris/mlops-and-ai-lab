@@ -11,9 +11,13 @@ Covers:
 
 import pytest
 
-from llms.examples.rag.rag_pipeline import (CHUNK_SIZE, SAMPLE_DOCUMENTS,
-                                            Chunk, Document, RAGPipeline,
-                                            chunk_documents, generate_stub)
+from rag_pipeline import (
+    Document,
+    RAGPipeline,
+    chunk_documents,
+    generate_stub,
+    SAMPLE_DOCUMENTS,
+)
 
 
 # ─── Chunking ───
