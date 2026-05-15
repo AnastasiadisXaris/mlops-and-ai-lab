@@ -19,8 +19,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-import mlops.examples.serving.app as serving_app
-from mlops.examples.serving.app import app
+import app as serving_app
+from app import app
 
 N = serving_app.N_FEATURES
 
