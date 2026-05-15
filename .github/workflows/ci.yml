@@ -62,17 +62,18 @@ jobs:
       - name: Test inference API
         env:
           MLFLOW_TRACKING_URI: sqlite:////tmp/mlflow-ci.db
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          cd mlops/examples/serving
-          python -m pytest test_app.py -v --tb=short
+          python -m pytest mlops/examples/serving/test_app.py -v --tb=short
 
       - name: Install monitoring dependencies
         run: pip install -r mlops/examples/monitoring/requirements.txt
 
       - name: Test drift detection
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          cd mlops/examples/monitoring
-          python -m pytest test_detect_drift.py -v --tb=short
+          python -m pytest mlops/examples/monitoring/test_detect_drift.py -v --tb=short
 
   # ─────────────────────────────────────────
   # Test — LLM examples
@@ -93,15 +94,16 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-llms-${{ hashFiles('llms/examples/rag/requirements.txt') }}
+          key: ${{ runner.os }}-pip-llms-v2-${{ hashFiles('llms/examples/rag/requirements.txt') }}
 
       - name: Install RAG dependencies
         run: pip install -r llms/examples/rag/requirements.txt
 
       - name: Test RAG pipeline
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          cd llms/examples/rag
-          python -m pytest test_rag_pipeline.py -v --tb=short --import-mode=importlib
+          python -m pytest llms/examples/rag/test_rag_pipeline.py -v --tb=short
 
   # ─────────────────────────────────────────
   # Validate datasets scripts
