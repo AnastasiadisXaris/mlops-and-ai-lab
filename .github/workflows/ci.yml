@@ -60,6 +60,8 @@ jobs:
         run: pip install -r mlops/examples/serving/requirements.txt
 
       - name: Test inference API
+        env:
+          MLFLOW_TRACKING_URI: sqlite:////tmp/mlflow-ci.db
         run: |
           cd mlops/examples/serving
           python -m pytest test_app.py -v --tb=short
@@ -159,7 +161,7 @@ jobs:
       - name: Smoke test — container starts
         run: |
           docker run -d --name mlops-api-test \
-            -e MLFLOW_TRACKING_URI=sqlite:///mlflow.db \
+            -e MLFLOW_TRACKING_URI=sqlite:////tmp/mlflow-ci.db \
             -p 8000:8000 \
             mlops-api:ci
           sleep 5
