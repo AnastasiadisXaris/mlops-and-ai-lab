@@ -60,11 +60,14 @@ jobs:
         run: pip install -r mlops/examples/serving/requirements.txt
 
       - name: Test inference API
+        run: |
+          export PYTHONPATH=$(pwd)
+          echo "PYTHONPATH=$PYTHONPATH"
+          python -c "import sys; print(sys.path)"
+          python -m pytest mlops/examples/serving/test_app.py -v --tb=short \
+            -p no:cacheprovider
         env:
           MLFLOW_TRACKING_URI: sqlite:////tmp/mlflow-ci.db
-          PYTHONPATH: ${{ github.workspace }}
-        run: |
-          python -m pytest mlops/examples/serving/test_app.py -v --tb=short
 
       - name: Install monitoring dependencies
         run: pip install -r mlops/examples/monitoring/requirements.txt
