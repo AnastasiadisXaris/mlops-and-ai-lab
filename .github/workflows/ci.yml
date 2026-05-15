@@ -101,7 +101,7 @@ jobs:
       - name: Test RAG pipeline
         run: |
           cd llms/examples/rag
-          python -m pytest test_rag_pipeline.py -v --tb=short
+          python -m pytest test_rag_pipeline.py -v --tb=short --import-mode=importlib
 
   # ─────────────────────────────────────────
   # Validate datasets scripts
