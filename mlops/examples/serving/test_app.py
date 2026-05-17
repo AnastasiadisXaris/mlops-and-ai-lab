@@ -11,16 +11,15 @@ Covers:
     - /predict/batch returns 422 on malformed instances
 """
 
+import app as serving_app
 import numpy as np
 import pytest
+from app import app
 from fastapi.testclient import TestClient
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
-
-import app as serving_app
-from app import app
 
 N = serving_app.N_FEATURES
 

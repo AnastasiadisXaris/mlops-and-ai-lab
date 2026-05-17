@@ -10,14 +10,8 @@ Covers:
 """
 
 import pytest
-from rag_pipeline import (
-    Document,
-    RAGPipeline,
-    chunk_documents,
-    generate_stub,
-    SAMPLE_DOCUMENTS,
-    CHUNK_SIZE,
-)
+from rag_pipeline import (CHUNK_SIZE, SAMPLE_DOCUMENTS, Document, RAGPipeline,
+                          chunk_documents, generate_stub)
 
 
 # ─── Chunking ───
@@ -63,6 +57,7 @@ def test_stub_llm_contains_query():
 # ─── RAGPipeline (stub LLM, no FAISS) ───
 class MockVectorStore:
     """Mock VectorStore that returns fixed chunks without FAISS."""
+
     def __init__(self):
         self.chunks = []
 
@@ -71,6 +66,7 @@ class MockVectorStore:
 
     def search(self, query, top_k=3):
         from rag_pipeline import RetrievalResult
+
         return [
             RetrievalResult(chunk=c, score=0.9 - i * 0.1)
             for i, c in enumerate(self.chunks[:top_k])
@@ -88,11 +84,11 @@ def pipeline_stub(monkeypatch):
 
 def test_pipeline_query_returns_expected_keys(pipeline_stub):
     result = pipeline_stub.query("What is MLOps?")
-    assert "question"  in result
-    assert "response"  in result
-    assert "sources"   in result
-    assert "scores"    in result
-    assert "chunks"    in result
+    assert "question" in result
+    assert "response" in result
+    assert "sources" in result
+    assert "scores" in result
+    assert "chunks" in result
 
 
 def test_pipeline_query_response_not_empty(pipeline_stub):
