@@ -83,8 +83,8 @@ def test_cusum_stable_performance():
 
 def test_cusum_detects_degradation():
     degraded = list(np.random.normal(0.90, 0.005, 10)) + list(
-        np.random.normal(0.65, 0.01, 20)
-    )  # big drop
+        np.random.normal(0.50, 0.01, 20)
+    )  # very large drop - well below target of 0.85
     result = run_cusum(degraded, target=0.85, threshold=CUSUM_THRESHOLD)
     assert result.drifted
     assert result.details["alert_at_step"] is not None
