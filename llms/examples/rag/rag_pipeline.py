@@ -25,7 +25,7 @@ import logging
 import os
 import textwrap
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import List
 
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -275,10 +275,14 @@ SAMPLE_DOCUMENTS = [
         doc_id="drift-detection",
         text="""
         Data drift occurs when the statistical properties of model input features change over time.
-        Model drift occurs when model performance degrades due to concept drift or data distribution shift.
-        PSI (Population Stability Index) measures feature distribution drift: PSI < 0.10 is stable,
-        PSI > 0.20 indicates significant drift. The KS test (Kolmogorov-Smirnov) detects distributional
-        changes with a p-value threshold of 0.05. CUSUM (Cumulative Sum) tracks sustained performance
+        Model drift occurs when model performance degrades
+        due to concept drift or data distribution shift.
+        PSI (Population Stability Index) measures feature distribution drift:
+        PSI < 0.10 is stable,
+        PSI > 0.20 indicates significant drift.
+        The KS test (Kolmogorov-Smirnov) detects distributional
+        changes with a p-value threshold of 0.05.
+        CUSUM (Cumulative Sum) tracks sustained performance
         degradation and triggers retraining alerts.
         """,
         metadata={"domain": "mlops", "topic": "monitoring"},
