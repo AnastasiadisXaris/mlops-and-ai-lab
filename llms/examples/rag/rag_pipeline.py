@@ -10,8 +10,14 @@ Covers:
 """
 
 import pytest
-from rag_pipeline import (CHUNK_SIZE, SAMPLE_DOCUMENTS, Document, RAGPipeline,
-                          chunk_documents, generate_stub)
+from rag_pipeline import (
+    CHUNK_SIZE,
+    SAMPLE_DOCUMENTS,
+    Document,
+    RAGPipeline,
+    chunk_documents,
+    generate_stub,
+)
 
 
 # ─── Chunking ───

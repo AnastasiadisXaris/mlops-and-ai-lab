@@ -26,8 +26,12 @@ import mlflow.sklearn
 import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import (accuracy_score, classification_report, f1_score,
-                             roc_auc_score)
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    f1_score,
+    roc_auc_score,
+)
 from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
