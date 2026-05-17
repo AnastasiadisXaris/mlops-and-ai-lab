@@ -21,10 +21,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Install linting tools
-        run: pip install flake8 black isort
+        run: pip install flake8 black==24.4.2 isort
 
       - name: black
         run: black --check --diff mlops/ llms/ datasets/
@@ -48,7 +48,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Cache pip
         uses: actions/cache@v4
@@ -91,7 +91,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Cache pip
         uses: actions/cache@v4
@@ -121,7 +121,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Install dependencies
         run: pip install pandas scikit-learn numpy pandera pyarrow
