@@ -54,9 +54,7 @@ jobs:
           key: ${{ runner.os }}-pip-mlops-${{ hashFiles('mlops/examples/serving/requirements.txt', 'mlops/examples/monitoring/requirements.txt') }}
 
       - name: Install serving dependencies
-        run: |
-          pip install setuptools
-          pip install -r mlops/examples/serving/requirements.txt
+        run: pip install -r mlops/examples/serving/requirements.txt
 
       - name: Test inference API
         run: |
