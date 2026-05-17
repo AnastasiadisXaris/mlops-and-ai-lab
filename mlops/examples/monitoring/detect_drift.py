@@ -39,7 +39,7 @@ log = logging.getLogger(__name__)
 PSI_THRESHOLDS = {"stable": 0.10, "warning": 0.20}  # > 0.20 = significant drift
 KS_ALPHA = 0.05  # p-value threshold
 CUSUM_THRESHOLD = 5.0  # cumulative sum alert threshold
-CUSUM_SLACK = 0.5  # slack parameter
+CUSUM_SLACK = 0.1  # slack parameter
 
 
 # ─────────────────────────────────────────
