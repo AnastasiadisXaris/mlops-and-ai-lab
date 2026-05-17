@@ -10,12 +10,13 @@ Covers:
 """
 
 import pytest
+
 from rag_pipeline import (
-    SAMPLE_DOCUMENTS,
     Document,
     RAGPipeline,
     chunk_documents,
     generate_stub,
+    SAMPLE_DOCUMENTS,
 )
 
 
