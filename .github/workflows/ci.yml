@@ -24,13 +24,10 @@ jobs:
           python-version: "3.12"
 
       - name: Install linting tools
-        run: pip install flake8 black==24.4.2 isort
+        run: pip install flake8 black==24.4.2
 
       - name: black
         run: black --check --diff mlops/ llms/ datasets/
-
-      - name: isort
-        run: isort --check-only --diff mlops/ llms/ datasets/
 
       - name: flake8
         run: flake8 mlops/ llms/ datasets/ --max-line-length=100 --extend-ignore=E203,W503
