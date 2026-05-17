@@ -13,7 +13,6 @@ Covers:
 
 import numpy as np
 import pandas as pd
-import pytest
 
 from mlops.examples.monitoring.detect_drift import (
     CUSUM_THRESHOLD,
