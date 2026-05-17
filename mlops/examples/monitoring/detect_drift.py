@@ -163,7 +163,7 @@ def run_cusum(
             alert_idx = i
 
     final_cusum = cusum_values[-1] if cusum_values else 0.0
-    drifted = final_cusum > threshold
+    drifted = alert_idx is not None
 
     return DriftResult(
         feature="model_performance",
